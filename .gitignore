@@ -29,4 +29,7 @@ hs_err_pid*
 
 .idea
 
-**/.gitignore
+**/.gitignoreworkspace
+.project
+.classpath
+workspace
