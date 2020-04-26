@@ -76,16 +76,6 @@ public class CategoryController {
         return R.ok();
     }
 
-    /**
-     * 删除
-     */
-    @RequestMapping("/delete")
-    public R delete(@RequestBody Long[] catIds) {
-        //categoryService.removeByIds(Arrays.asList(catIds));
-
-        categoryService.removeMenusByIds(Arrays.asList(catIds));
-
-        return R.ok();
-    }
+ 
 
 }
