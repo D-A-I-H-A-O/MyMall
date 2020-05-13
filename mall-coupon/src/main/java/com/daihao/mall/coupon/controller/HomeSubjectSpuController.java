@@ -3,7 +3,6 @@ package com.daihao.mall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import com.daihao.mall.common.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +20,9 @@ import com.daihao.mall.common.utils.R;
 /**
  * 专题商品
  *
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/homesubjectspu")
@@ -35,7 +34,7 @@ public class HomeSubjectSpuController {
      * 列表
      */
     @RequestMapping("/list")
-    //("coupon:homesubjectspu:list")
+    //@RequiresPermissions("coupon:homesubjectspu:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = homeSubjectSpuService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class HomeSubjectSpuController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //("coupon:homesubjectspu:info")
+    //@RequiresPermissions("coupon:homesubjectspu:info")
     public R info(@PathVariable("id") Long id){
 		HomeSubjectSpuEntity homeSubjectSpu = homeSubjectSpuService.getById(id);
 
@@ -58,7 +57,7 @@ public class HomeSubjectSpuController {
      * 保存
      */
     @RequestMapping("/save")
-    //("coupon:homesubjectspu:save")
+    //@RequiresPermissions("coupon:homesubjectspu:save")
     public R save(@RequestBody HomeSubjectSpuEntity homeSubjectSpu){
 		homeSubjectSpuService.save(homeSubjectSpu);
 
@@ -69,7 +68,7 @@ public class HomeSubjectSpuController {
      * 修改
      */
     @RequestMapping("/update")
-    //("coupon:homesubjectspu:update")
+    //@RequiresPermissions("coupon:homesubjectspu:update")
     public R update(@RequestBody HomeSubjectSpuEntity homeSubjectSpu){
 		homeSubjectSpuService.updateById(homeSubjectSpu);
 
@@ -80,7 +79,7 @@ public class HomeSubjectSpuController {
      * 删除
      */
     @RequestMapping("/delete")
-    //("coupon:homesubjectspu:delete")
+    //@RequiresPermissions("coupon:homesubjectspu:delete")
     public R delete(@RequestBody Long[] ids){
 		homeSubjectSpuService.removeByIds(Arrays.asList(ids));
 

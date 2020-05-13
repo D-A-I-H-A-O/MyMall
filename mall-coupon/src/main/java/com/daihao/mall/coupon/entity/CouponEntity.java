@@ -2,18 +2,18 @@ package com.daihao.mall.coupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import java.math.BigDecimal;
-import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * 优惠券信息
  * 
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @Data
 @TableName("sms_coupon")

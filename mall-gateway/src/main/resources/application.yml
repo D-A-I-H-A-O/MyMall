@@ -11,8 +11,16 @@ spring:
         ##          uri: https://blog.csdn.net
         ##          predicates:
         ##            - Query=url,csdn
+
+        - id: member_route
+          uri: lb://mall-member
+          predicates:
+            - Path=/api/member/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
         - id: product_route
-          #lb 表示转发至服务 服务也许注册到nacos
+          #lb 表示转发至服务 服务也需注册到nacos
           uri: lb://mall-product
           predicates:
             #当请求为指定路径 断言为真 **代表任意 这个路径需往上写提高优先级不被/api/**给拦截
@@ -22,6 +30,13 @@ spring:
             #例请求http://localhost:88/api/product/category/list/tree会改为
             #http://mall-product端口/product/category/list/tree
             - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: third_party_route
+          uri: lb://mall-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>.*),/$\{segment}
 
         - id: admin_route
           uri: lb://renren-fast

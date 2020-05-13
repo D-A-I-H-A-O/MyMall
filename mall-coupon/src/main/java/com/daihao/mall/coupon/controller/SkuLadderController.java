@@ -1,29 +1,23 @@
 package com.daihao.mall.coupon.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import com.daihao.mall.common.utils.R;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.daihao.mall.coupon.entity.SkuLadderEntity;
-import com.daihao.mall.coupon.service.SkuLadderService;
 import com.daihao.mall.common.utils.PageUtils;
 import com.daihao.mall.common.utils.R;
+import com.daihao.mall.coupon.entity.SkuLadderEntity;
+import com.daihao.mall.coupon.service.SkuLadderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 
 /**
  * 商品阶梯价格
  *
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/skuladder")
@@ -35,7 +29,7 @@ public class SkuLadderController {
      * 列表
      */
     @RequestMapping("/list")
-    //("coupon:skuladder:list")
+    //@RequiresPermissions("coupon:skuladder:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = skuLadderService.queryPage(params);
 
@@ -47,7 +41,7 @@ public class SkuLadderController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //("coupon:skuladder:info")
+    //@RequiresPermissions("coupon:skuladder:info")
     public R info(@PathVariable("id") Long id){
 		SkuLadderEntity skuLadder = skuLadderService.getById(id);
 
@@ -58,7 +52,7 @@ public class SkuLadderController {
      * 保存
      */
     @RequestMapping("/save")
-    //("coupon:skuladder:save")
+    //@RequiresPermissions("coupon:skuladder:save")
     public R save(@RequestBody SkuLadderEntity skuLadder){
 		skuLadderService.save(skuLadder);
 
@@ -69,7 +63,7 @@ public class SkuLadderController {
      * 修改
      */
     @RequestMapping("/update")
-    //("coupon:skuladder:update")
+    //@RequiresPermissions("coupon:skuladder:update")
     public R update(@RequestBody SkuLadderEntity skuLadder){
 		skuLadderService.updateById(skuLadder);
 
@@ -80,7 +74,7 @@ public class SkuLadderController {
      * 删除
      */
     @RequestMapping("/delete")
-    //("coupon:skuladder:delete")
+    //@RequiresPermissions("coupon:skuladder:delete")
     public R delete(@RequestBody Long[] ids){
 		skuLadderService.removeByIds(Arrays.asList(ids));
 

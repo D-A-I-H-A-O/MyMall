@@ -1,23 +1,28 @@
 package com.daihao.mall.coupon.controller;
 
-import com.daihao.mall.common.utils.PageUtils;
-import com.daihao.mall.common.utils.R;
-import com.daihao.mall.coupon.entity.CouponSpuCategoryRelationEntity;
-import com.daihao.mall.coupon.service.CouponSpuCategoryRelationService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.Arrays;
 import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.daihao.mall.coupon.entity.CouponSpuCategoryRelationEntity;
+import com.daihao.mall.coupon.service.CouponSpuCategoryRelationService;
+import com.daihao.mall.common.utils.PageUtils;
+import com.daihao.mall.common.utils.R;
 
 
 
 /**
  * 优惠券分类关联
  *
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/couponspucategoryrelation")
@@ -29,7 +34,7 @@ public class CouponSpuCategoryRelationController {
      * 列表
      */
     @RequestMapping("/list")
-    //("coupon:couponspucategoryrelation:list")
+    //@RequiresPermissions("coupon:couponspucategoryrelation:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = couponSpuCategoryRelationService.queryPage(params);
 
@@ -41,7 +46,7 @@ public class CouponSpuCategoryRelationController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //("coupon:couponspucategoryrelation:info")
+    //@RequiresPermissions("coupon:couponspucategoryrelation:info")
     public R info(@PathVariable("id") Long id){
 		CouponSpuCategoryRelationEntity couponSpuCategoryRelation = couponSpuCategoryRelationService.getById(id);
 
@@ -52,7 +57,7 @@ public class CouponSpuCategoryRelationController {
      * 保存
      */
     @RequestMapping("/save")
-    //("coupon:couponspucategoryrelation:save")
+    //@RequiresPermissions("coupon:couponspucategoryrelation:save")
     public R save(@RequestBody CouponSpuCategoryRelationEntity couponSpuCategoryRelation){
 		couponSpuCategoryRelationService.save(couponSpuCategoryRelation);
 
@@ -63,7 +68,7 @@ public class CouponSpuCategoryRelationController {
      * 修改
      */
     @RequestMapping("/update")
-    //("coupon:couponspucategoryrelation:update")
+    //@RequiresPermissions("coupon:couponspucategoryrelation:update")
     public R update(@RequestBody CouponSpuCategoryRelationEntity couponSpuCategoryRelation){
 		couponSpuCategoryRelationService.updateById(couponSpuCategoryRelation);
 
@@ -74,7 +79,7 @@ public class CouponSpuCategoryRelationController {
      * 删除
      */
     @RequestMapping("/delete")
-    //("coupon:couponspucategoryrelation:delete")
+    //@RequiresPermissions("coupon:couponspucategoryrelation:delete")
     public R delete(@RequestBody Long[] ids){
 		couponSpuCategoryRelationService.removeByIds(Arrays.asList(ids));
 

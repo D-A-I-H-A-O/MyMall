@@ -1,10 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="903c30da-2ae1-4f58-b3cc-fcea82e49aee" name="Default Changelist" comment="项目初始化">
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/daihao/mall/gateway/config/MallCorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/bootstrap.properties" afterDir="false" />
+    <list default="true" id="903c30da-2ae1-4f58-b3cc-fcea82e49aee" name="Default Changelist" comment="三级分类">
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/constant/ProductConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/constant/WareConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/es/SkuEsModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/exception/BizCodeEnume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/to/MemberPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/to/SkuHasStockVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/to/SkuReductionTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/to/SpuBoundTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/valid/AddGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/valid/ListValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/valid/ListValueConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/valid/UpdateGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/valid/UpdateStatusGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/exception/MallExceptionControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/feign/CouponFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/feign/SearchFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/feign/WareFenginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/Attr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/AttrGroupRelationVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/AttrGroupWithAttrsVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/AttrRespVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/AttrVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/BaseAttrs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/Bounds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/BrandVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/Images.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/MemberPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/Skus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/vo/SpuSaveVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/daihao/mall/search/config/EsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/daihao/mall/search/constant/EsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/daihao/mall/search/controller/ElasticSaveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/daihao/mall/search/service/ProductSaveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/daihao/mall/search/service/impl/ProductSaveServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-third-party/src/main/java/com/daihao/mall/thirdparty/controller/OssController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-third-party/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-third-party/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/vo/SkuHasStockVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/PageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/RRException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/RRException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/MallCommonApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/MallCommonApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/Constant$CloudService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/Constant$CloudService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/Constant$MenuType.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/Constant$MenuType.class" afterDir="false" />
@@ -17,7 +110,83 @@
       <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/SpringContextUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/SpringContextUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/xss/HTMLFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/xss/HTMLFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/xss/SQLFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/xss/SQLFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/MallCouponApplication$1EchoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/MallCouponApplication$1EchoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/mall-coupon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/mall-coupon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/MallCouponApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/MallCouponApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponSpuCategoryRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponSpuCategoryRelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponSpuRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/CouponSpuRelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/HomeAdvController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/HomeAdvController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/HomeSubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/HomeSubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/HomeSubjectSpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/HomeSubjectSpuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/MemberPriceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/MemberPriceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillPromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillPromotionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillSkuNoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillSkuNoticeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillSkuRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SeckillSkuRelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SkuFullReductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SkuFullReductionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SkuLadderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SkuLadderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SpuBoundsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/controller/SpuBoundsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponHistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponHistoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponSpuCategoryRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponSpuCategoryRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponSpuRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/CouponSpuRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/HomeAdvDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/HomeAdvDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/HomeSubjectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/HomeSubjectDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/HomeSubjectSpuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/HomeSubjectSpuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/MemberPriceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/MemberPriceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillPromotionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillPromotionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillSessionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillSessionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillSkuNoticeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillSkuNoticeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillSkuRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SeckillSkuRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SkuFullReductionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SkuFullReductionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SkuLadderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SkuLadderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SpuBoundsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/dao/SpuBoundsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponHistoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponHistoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponSpuCategoryRelationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponSpuCategoryRelationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponSpuRelationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/CouponSpuRelationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/HomeAdvEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/HomeAdvEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/HomeSubjectEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/HomeSubjectEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/HomeSubjectSpuEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/HomeSubjectSpuEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/MemberPriceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/MemberPriceEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillPromotionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillPromotionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillSessionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillSessionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillSkuNoticeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillSkuNoticeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillSkuRelationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SeckillSkuRelationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SkuFullReductionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SkuFullReductionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SkuLadderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SkuLadderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SpuBoundsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/entity/SpuBoundsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponSpuCategoryRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponSpuCategoryRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponSpuRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/CouponSpuRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/HomeAdvService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/HomeAdvService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/HomeSubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/HomeSubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/HomeSubjectSpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/HomeSubjectSpuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/MemberPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/MemberPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillPromotionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillPromotionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillSessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillSkuNoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillSkuNoticeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillSkuRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SeckillSkuRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SkuFullReductionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SkuFullReductionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SkuLadderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SkuLadderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SpuBoundsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/SpuBoundsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/CouponHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/CouponHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/CouponServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/CouponServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/CouponSpuRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/CouponSpuRelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/SkuFullReductionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/java/com/daihao/mall/coupon/service/impl/SkuFullReductionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/src/test/java/com/daihao/mall/coupon/MallCouponApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/src/test/java/com/daihao/mall/coupon/MallCouponApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/MallCouponApplication$1EchoController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/MallCouponApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/MallCouponApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/controller/CouponController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/controller/CouponController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/controller/CouponHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/controller/CouponHistoryController.class" afterDir="false" />
@@ -94,12 +263,16 @@
       <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/service/impl/SkuFullReductionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/service/impl/SkuFullReductionServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/service/impl/SkuLadderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/service/impl/SkuLadderServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/service/impl/SpuBoundsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/classes/com/daihao/mall/coupon/service/impl/SpuBoundsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-coupon/target/test-classes/com/daihao/mall/coupon/MallCouponApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/target/test-classes/com/daihao/mall/coupon/MallCouponApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/daihao/mall/gateway/MallGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/daihao/mall/gateway/MallGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/daihao/mall/gateway/MallGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/com/daihao/mall/gateway/MallGatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/test-classes/com/daihao/mall/gateway/MallGatewayApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/test-classes/com/daihao/mall/gateway/MallGatewayApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-member/mall-member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/mall-member.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-member/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-member/src/test/java/com/daihao/mall/member/MallMemberApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/src/test/java/com/daihao/mall/member/MallMemberApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-member/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/MallMemberApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/MallMemberApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/controller/GrowthChangeHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/controller/GrowthChangeHistoryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/controller/IntegrationChangeHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/controller/IntegrationChangeHistoryController.class" afterDir="false" />
@@ -147,116 +320,152 @@
       <change beforePath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/service/impl/MemberReceiveAddressServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/service/impl/MemberReceiveAddressServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/service/impl/MemberServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/service/impl/MemberStatisticsInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/com/daihao/mall/member/service/impl/MemberStatisticsInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/MallOrderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/MallOrderApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderOperateHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderOperateHistoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnApplyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnApplyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnReasonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnReasonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderSettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderSettingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/PaymentInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/PaymentInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/RefundInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/RefundInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderItemDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderOperateHistoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderOperateHistoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnApplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnApplyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnReasonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnReasonDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderSettingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderSettingDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/PaymentInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/PaymentInfoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/RefundInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/RefundInfoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderItemEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderItemEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderOperateHistoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderOperateHistoryEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnApplyEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnApplyEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnReasonEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnReasonEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderSettingEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderSettingEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/PaymentInfoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/PaymentInfoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/RefundInfoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/RefundInfoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderOperateHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderOperateHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnApplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnApplyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnReasonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnReasonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderSettingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderSettingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/PaymentInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/PaymentInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/RefundInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/RefundInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderOperateHistoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderOperateHistoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnApplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnApplyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnReasonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnReasonServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderSettingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderSettingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/PaymentInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/PaymentInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/RefundInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/RefundInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-member/target/test-classes/com/daihao/mall/member/MallMemberApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/test-classes/com/daihao/mall/member/MallMemberApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/mall-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/mall-order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/mall-product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/mall-product.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/MallProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/MallProductApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/AttrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/AttrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/AttrGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/AttrGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/CategoryBrandRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/CategoryBrandRelationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SkuImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SkuImagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SkuInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SkuInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SkuSaleAttrValueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SkuSaleAttrValueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuImagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuImagesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuInfoDescController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller/SpuInfoDescController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/AttrAttrgroupRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/AttrAttrgroupRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/AttrDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/AttrDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/CategoryBrandRelationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/CategoryBrandRelationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/SpuInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/dao/SpuInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/AttrGroupEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/AttrGroupEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/BrandEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/BrandEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/SpuInfoDescEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/entity/SpuInfoDescEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/AttrAttrgroupRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/AttrAttrgroupRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/AttrGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/AttrGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/AttrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/AttrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/CategoryBrandRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/CategoryBrandRelationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/ProductAttrValueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/ProductAttrValueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SkuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SkuInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SpuImagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SpuImagesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SpuInfoDescService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SpuInfoDescService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SpuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/SpuInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/AttrAttrgroupRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/AttrAttrgroupRelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/AttrGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/AttrGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/AttrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/AttrServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/CategoryBrandRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/CategoryBrandRelationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/ProductAttrValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/ProductAttrValueServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SkuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SpuImagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SpuImagesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SpuInfoDescServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SpuInfoDescServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SpuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/SpuInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/AttrAttrgroupRelationDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/AttrAttrgroupRelationDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/AttrDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/AttrDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/CategoryBrandRelationDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/CategoryBrandRelationDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/SpuInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/mapper/product/SpuInfoDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/MallProductApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/MallProductApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/AttrController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/AttrController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/AttrGroupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/AttrGroupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/CategoryBrandRelationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/CategoryBrandRelationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SkuImagesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SkuImagesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SkuInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SkuInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SkuSaleAttrValueController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SkuSaleAttrValueController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuCommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuCommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuImagesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuImagesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuInfoDescController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/controller/SpuInfoDescController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/dao/AttrAttrgroupRelationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/dao/AttrAttrgroupRelationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/dao/AttrDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/dao/CategoryBrandRelationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/dao/CategoryBrandRelationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/AttrGroupEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/AttrGroupEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/BrandEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/BrandEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/CategoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/CategoryEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/SpuInfoDescEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/entity/SpuInfoDescEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/AttrAttrgroupRelationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/AttrAttrgroupRelationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/AttrGroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/AttrGroupService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/AttrService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/CategoryBrandRelationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/CategoryBrandRelationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/ProductAttrValueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/ProductAttrValueService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/SkuInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/SpuImagesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/SpuImagesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/SpuInfoDescService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/SpuInfoDescService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/SpuInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/AttrAttrgroupRelationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/AttrAttrgroupRelationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/AttrGroupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/AttrGroupServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/AttrServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/CategoryBrandRelationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/CategoryBrandRelationServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/ProductAttrValueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/ProductAttrValueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/SkuInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/SpuImagesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/SpuImagesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/SpuInfoDescServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/SpuInfoDescServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/SpuInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/mapper/product/AttrAttrgroupRelationDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/mapper/product/AttrAttrgroupRelationDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/mapper/product/AttrDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/mapper/product/AttrDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/mapper/product/CategoryBrandRelationDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/mapper/product/CategoryBrandRelationDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/src/main/resources/es.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/src/main/resources/es.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-third-party/mall-third-party.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/mall-third-party.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-third-party/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-third-party/src/main/java/com/daihao/mall/thirdparty/MallThirdPartyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/src/main/java/com/daihao/mall/thirdparty/MallThirdPartyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-third-party/src/test/java/com/daihao/mall/thirdparty/MallThirdPartyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/src/test/java/com/daihao/mall/thirdparty/MallThirdPartyApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-third-party/target/classes/com/daihao/mall/thirdparty/MallThirdPartyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/target/classes/com/daihao/mall/thirdparty/MallThirdPartyApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/MallWareApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/MallWareApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/PurchaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/PurchaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/PurchaseDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/PurchaseDetailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareOrderTaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareOrderTaskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareOrderTaskDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareOrderTaskDetailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareSkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareSkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/PurchaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/PurchaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/PurchaseDetailDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/PurchaseDetailDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareInfoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareOrderTaskDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareOrderTaskDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareOrderTaskDetailDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareOrderTaskDetailDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareSkuDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareSkuDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/PurchaseDetailEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/PurchaseDetailEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/PurchaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/PurchaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareInfoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareInfoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareOrderTaskDetailEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareOrderTaskDetailEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareOrderTaskEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareOrderTaskEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareSkuEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareSkuEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/PurchaseDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/PurchaseDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/PurchaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/PurchaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareOrderTaskDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareOrderTaskDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareOrderTaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareOrderTaskService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareSkuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareSkuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/PurchaseDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/PurchaseDetailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/PurchaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/PurchaseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareOrderTaskDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareOrderTaskDetailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareOrderTaskServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareOrderTaskServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareSkuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareSkuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/modules/job/service/impl/ScheduleJobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/modules/job/service/impl/ScheduleJobServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/target/classes/io/renren/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/target/classes/io/renren/config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/target/classes/io/renren/modules/job/service/impl/ScheduleJobServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/target/classes/io/renren/modules/job/service/impl/ScheduleJobServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/RenrenApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/RenrenApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/config/DbConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/config/DbConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/controller/SysGeneratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/controller/SysGeneratorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/GeneratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/GeneratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/MySQLGeneratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/MySQLGeneratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/OracleGeneratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/OracleGeneratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/PostgreSQLGeneratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/PostgreSQLGeneratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/SQLServerGeneratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/SQLServerGeneratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/entity/ColumnEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/entity/ColumnEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/entity/TableEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/entity/TableEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/service/SysGeneratorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/service/SysGeneratorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/GenUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/GenUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/PageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/PageUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/Query.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/RRException.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/RRException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/RRExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/RRExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-third-party/target/test-classes/com/daihao/mall/thirdparty/MallThirdPartyApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/target/test-classes/com/daihao/mall/thirdparty/MallThirdPartyApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/mall-ware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/mall-ware.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/controller/WareSkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/controller/WareSkuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/dao/WareSkuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/dao/WareSkuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/service/WareSkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/service/WareSkuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/service/impl/WareSkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/src/main/java/com/daihao/mall/ware/service/impl/WareSkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/src/main/resources/mapper/ware/WareSkuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/src/main/resources/mapper/ware/WareSkuDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/MallWareApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/PurchaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/PurchaseDetailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareOrderTaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareOrderTaskDetailController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/controller/WareSkuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/PurchaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/PurchaseDetailDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareInfoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareOrderTaskDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareOrderTaskDetailDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/dao/WareSkuDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/PurchaseDetailEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/PurchaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareInfoEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareOrderTaskDetailEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareOrderTaskEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/entity/WareSkuEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/PurchaseDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/PurchaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareOrderTaskDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareOrderTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/WareSkuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/PurchaseDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/PurchaseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareOrderTaskDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareOrderTaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/com/daihao/mall/ware/service/impl/WareSkuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ware/target/classes/mapper/ware/WareSkuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/target/classes/mapper/ware/WareSkuDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/renren-fast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/renren-fast.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,10 +478,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -326,49 +538,113 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/renren-fast/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/controller" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14967743" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="nele.options" />
+    <property name="settings.editor.selected.configurable" value="profiler.calltree.filter" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.daihao.mall.order" />
+      <recent name="com.daihao.mall.coupon" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEWork\MyMall\mall-product\src\main\java\com\daihao\mall\product\controller" />
+      <recent name="D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils" />
+      <recent name="D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common" />
+      <recent name="D:\IDEWork\MyMall\mall-coupon\src\main\java\com\daihao\mall\coupon" />
+      <recent name="D:\IDEWork\MyMall\mall-coupon\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.daihao.mall.product.vo" />
+      <recent name="com.daihao.mall.common.utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IDEWork\MyMall\mall-gateway\src\main\resources" />
       <recent name="D:\IDEWork\MyMall\mall-product\src\main" />
       <recent name="D:\IDEWork\MyMall\mall-product\src" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.daihao.mall.order" />
-      <recent name="com.daihao.mall.coupon" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.daihao.mall.common.utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEWork\MyMall\renren-fast\src\main\resources" />
-      <recent name="D:\IDEWork\MyMall\mall-coupon\src\main\resources" />
-      <recent name="D:\IDEWork\MyMall\mall-ware\src\main\resources" />
-      <recent name="D:\IDEWork\MyMall\mall-ware\src" />
-      <recent name="D:\IDEWork\MyMall\mall-order\src" />
-    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RenrenApplication">
-    <configuration name="MallProductApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-product" />
+  <component name="RunManager" selected="Spring Boot.MallMemberApplication">
+    <configuration name="MallSearchApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-search" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.daihao.mall.product.*" />
+          <option name="PATTERN" value="com.daihao.mall.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.daihao.mall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.product.MallProductApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplicationTests.index" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="index" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplicationTests.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="search" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplicationTests.searchData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="searchData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -416,6 +692,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.daihao.mall.search.MallSearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallThirdPartyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-third-party" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.daihao.mall.thirdparty.MallThirdPartyApplication" />
@@ -430,19 +713,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RenrenApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="renren-generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.renren.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="renren-fast" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
@@ -452,8 +722,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RenrenApplication (1)" />
-        <item itemvalue="JUnit.MallProductApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MallSearchApplicationTests.searchData" />
+        <item itemvalue="JUnit.MallSearchApplicationTests.search" />
+        <item itemvalue="JUnit.MallSearchApplicationTests.index" />
+        <item itemvalue="JUnit.MallSearchApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MallSearchApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -507,6 +780,19 @@
       <workItem from="1587287107518" duration="846000" />
       <workItem from="1587387498564" duration="5940000" />
       <workItem from="1587470385980" duration="4652000" />
+      <workItem from="1587567881523" duration="557000" />
+      <workItem from="1587906174188" duration="1508000" />
+      <workItem from="1587907732921" duration="538000" />
+      <workItem from="1587908324942" duration="6388000" />
+      <workItem from="1587989770847" duration="10608000" />
+      <workItem from="1588168053675" duration="3874000" />
+      <workItem from="1588388515588" duration="3855000" />
+      <workItem from="1589035055181" duration="4539000" />
+      <workItem from="1589097454830" duration="12225000" />
+      <workItem from="1589196289146" duration="12745000" />
+      <workItem from="1589287686571" duration="5548000" />
+      <workItem from="1589293421179" duration="2117000" />
+      <workItem from="1589372274665" duration="11446000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1585837230790</created>
@@ -529,7 +815,35 @@
       <option name="project" value="LOCAL" />
       <updated>1587051131441</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="项目初始化">
+      <created>1587567937571</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587567937571</updated>
+    </task>
+    <task id="LOCAL-00005" summary="三级分类">
+      <created>1587907245356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587907245356</updated>
+    </task>
+    <task id="LOCAL-00006" summary="品牌管理">
+      <created>1587912230709</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587912230709</updated>
+    </task>
+    <task id="LOCAL-00007" summary="es.txt">
+      <created>1589373657823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589373657823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +864,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目初始化" />
+    <MESSAGE value="三级分类" />
+    <MESSAGE value="品牌管理" />
+    <MESSAGE value="es.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="es.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="984" y="158" key="#Custom_Plugin_Repositories" timestamp="1586958691651">
@@ -561,10 +878,14 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="572" y="276" key="#Project_Structure/0.0.2160.1400@0.0.2160.1400" timestamp="1586266025422" />
-    <state x="301" y="346" key="#com.intellij.ide.util.MemberChooser" timestamp="1587388397710">
+    <state x="1329" y="489" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589372302100">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="301" y="346" key="#com.intellij.ide.util.MemberChooser/0.0.2160.1400@0.0.2160.1400" timestamp="1587388397710" />
+    <state x="1329" y="489" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2160.1400@0.0.2160.1400" timestamp="1589372302100" />
+    <state x="301" y="346" key="#com.intellij.ide.util.MemberChooser" timestamp="1589381606287">
+      <screen x="0" y="0" width="2160" height="1400" />
+    </state>
+    <state x="301" y="346" key="#com.intellij.ide.util.MemberChooser/0.0.2160.1400@0.0.2160.1400" timestamp="1589381606287" />
     <state x="646" y="612" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586264075301">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
@@ -573,66 +894,74 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="824" y="560" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2160.1400@0.0.2160.1400" timestamp="1586155522233" />
-    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586154107236">
+    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587907188663">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1586154107236" />
+    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1587907188663" />
+    <state x="1287" y="392" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589378451522">
+      <screen x="0" y="0" width="2160" height="1400" />
+    </state>
+    <state x="1287" y="392" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1589378451522" />
     <state x="743" y="154" key="#renren-fast/Dockerfile" timestamp="1586440066893">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="743" y="154" key="#renren-fast/Dockerfile/0.0.2160.1400@0.0.2160.1400" timestamp="1586440066893" />
-    <state x="953" y="226" key="CommitChangelistDialog2" timestamp="1587051691955">
+    <state x="953" y="226" key="CommitChangelistDialog2" timestamp="1589373656419">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="953" y="226" key="CommitChangelistDialog2/0.0.2160.1400@0.0.2160.1400" timestamp="1587051691955" />
+    <state x="953" y="226" key="CommitChangelistDialog2/0.0.2160.1400@0.0.2160.1400" timestamp="1589373656419" />
+    <state width="431" height="582" key="DebuggerActiveHint" timestamp="1589098113528">
+      <screen x="0" y="0" width="2160" height="1400" />
+    </state>
+    <state width="431" height="582" key="DebuggerActiveHint/0.0.2160.1400@0.0.2160.1400" timestamp="1589098113528" />
     <state x="937" y="215" width="540" height="698" key="FileChooserDialogImpl" timestamp="1586960192226">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="937" y="215" width="540" height="698" key="FileChooserDialogImpl/0.0.2160.1400@0.0.2160.1400" timestamp="1586960192226" />
-    <state width="1024" height="385" key="GridCell.Tab.0.bottom" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.0.bottom" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.0.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.0.center" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.0.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.0.center" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.0.center/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.0.left" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.0.center/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.0.left" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.0.left/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.0.right" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.0.left/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.0.right" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.0.right/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.1.bottom" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.0.right/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.1.bottom" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.1.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.1.center" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.1.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.1.center" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.1.center/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.1.left" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.1.center/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.1.left" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.1.left/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
-    <state width="1024" height="385" key="GridCell.Tab.1.right" timestamp="1587480891475">
+    <state width="1053" height="181" key="GridCell.Tab.1.left/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
+    <state width="1053" height="181" key="GridCell.Tab.1.right" timestamp="1589298451918">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="1024" height="385" key="GridCell.Tab.1.right/0.0.2160.1400@0.0.2160.1400" timestamp="1587480891475" />
+    <state width="1053" height="181" key="GridCell.Tab.1.right/0.0.2160.1400@0.0.2160.1400" timestamp="1589298451918" />
     <state x="995" y="277" key="Maven.ArtifactSearchDialog" timestamp="1585838953287">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="995" y="277" key="Maven.ArtifactSearchDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1585838953287" />
-    <state x="1428" y="348" key="RollbackChangesDialog" timestamp="1585837148623">
+    <state x="1428" y="348" key="RollbackChangesDialog" timestamp="1589208245404">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="1428" y="348" key="RollbackChangesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1585837148623" />
-    <state x="41" y="238" width="1229" height="883" key="SettingsEditor" timestamp="1587393115600">
+    <state x="1428" y="348" key="RollbackChangesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1589208245404" />
+    <state x="284" y="241" width="1229" height="883" key="SettingsEditor" timestamp="1589380401995">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="41" y="238" width="1229" height="883" key="SettingsEditor/0.0.2160.1400@0.0.2160.1400" timestamp="1587393115600" />
+    <state x="284" y="241" width="1229" height="883" key="SettingsEditor/0.0.2160.1400@0.0.2160.1400" timestamp="1589380401995" />
     <state x="1461" y="603" key="VCS.ChangelistChooser" timestamp="1585837195544">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
@@ -641,30 +970,38 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="1482" y="605" key="VCS.EditChangelistDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1585837191483" />
-    <state x="1112" y="372" key="Vcs.Push.Dialog.v2" timestamp="1585837242790">
+    <state x="1112" y="372" key="Vcs.Push.Dialog.v2" timestamp="1589373663329">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="1112" y="372" key="Vcs.Push.Dialog.v2/0.0.2160.1400@0.0.2160.1400" timestamp="1585837242790" />
-    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587051189855">
+    <state x="1112" y="372" key="Vcs.Push.Dialog.v2/0.0.2160.1400@0.0.2160.1400" timestamp="1589373663329" />
+    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587912200404">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2160.1400@0.0.2160.1400" timestamp="1587051189855" />
-    <state x="264" y="628" width="933" height="738" key="find.popup" timestamp="1587133867759">
+    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2160.1400@0.0.2160.1400" timestamp="1587912200404" />
+    <state width="1590" height="705" key="documentation.popup.size" timestamp="1589100620989">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="264" y="628" width="933" height="738" key="find.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1587133867759" />
-    <state x="562" y="276" width="1598" height="695" key="new project wizard" timestamp="1585836707330">
+    <state width="1590" height="705" key="documentation.popup.size/0.0.2160.1400@0.0.2160.1400" timestamp="1589100620989" />
+    <state x="453" y="394" width="933" height="738" key="find.popup" timestamp="1589294478276">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="562" y="276" width="1598" height="695" key="new project wizard/0.0.2160.1400@0.0.2160.1400" timestamp="1585836707330" />
-    <state x="652" y="327" key="run.anything.popup" timestamp="1587134830932">
+    <state x="453" y="394" width="933" height="738" key="find.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1589294478276" />
+    <state x="737" y="447" key="git4idea.merge.GitPullDialog" timestamp="1587912456031">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="652" y="327" key="run.anything.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1587134830932" />
-    <state x="659" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1587137686508">
+    <state x="737" y="447" key="git4idea.merge.GitPullDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1587912456031" />
+    <state x="562" y="276" width="1598" height="695" key="new project wizard" timestamp="1589035120586">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="659" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1587137686508" />
+    <state x="562" y="276" width="1598" height="695" key="new project wizard/0.0.2160.1400@0.0.2160.1400" timestamp="1589035120586" />
+    <state x="652" y="327" key="run.anything.popup" timestamp="1589037947288">
+      <screen x="0" y="0" width="2160" height="1400" />
+    </state>
+    <state x="652" y="327" key="run.anything.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1589037947288" />
+    <state x="659" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1589380394646">
+      <screen x="0" y="0" width="2160" height="1400" />
+    </state>
+    <state x="659" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1589380394646" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyMall$MallGatewayApplication.ic" NAME="MallGatewayApplication Coverage Results" MODIFIED="1587132673070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

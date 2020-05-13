@@ -3,7 +3,6 @@ package com.daihao.mall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import com.daihao.mall.common.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +20,9 @@ import com.daihao.mall.common.utils.R;
 /**
  * 商品会员价格
  *
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/memberprice")
@@ -35,7 +34,7 @@ public class MemberPriceController {
      * 列表
      */
     @RequestMapping("/list")
-    //("coupon:memberprice:list")
+    //@RequiresPermissions("coupon:memberprice:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = memberPriceService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class MemberPriceController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //("coupon:memberprice:info")
+    //@RequiresPermissions("coupon:memberprice:info")
     public R info(@PathVariable("id") Long id){
 		MemberPriceEntity memberPrice = memberPriceService.getById(id);
 
@@ -58,7 +57,7 @@ public class MemberPriceController {
      * 保存
      */
     @RequestMapping("/save")
-    //("coupon:memberprice:save")
+    //@RequiresPermissions("coupon:memberprice:save")
     public R save(@RequestBody MemberPriceEntity memberPrice){
 		memberPriceService.save(memberPrice);
 
@@ -69,7 +68,7 @@ public class MemberPriceController {
      * 修改
      */
     @RequestMapping("/update")
-    //("coupon:memberprice:update")
+    //@RequiresPermissions("coupon:memberprice:update")
     public R update(@RequestBody MemberPriceEntity memberPrice){
 		memberPriceService.updateById(memberPrice);
 
@@ -80,7 +79,7 @@ public class MemberPriceController {
      * 删除
      */
     @RequestMapping("/delete")
-    //("coupon:memberprice:delete")
+    //@RequiresPermissions("coupon:memberprice:delete")
     public R delete(@RequestBody Long[] ids){
 		memberPriceService.removeByIds(Arrays.asList(ids));
 

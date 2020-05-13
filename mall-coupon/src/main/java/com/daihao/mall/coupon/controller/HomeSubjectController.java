@@ -3,7 +3,6 @@ package com.daihao.mall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import com.daihao.mall.common.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +20,9 @@ import com.daihao.mall.common.utils.R;
 /**
  * 首页专题表【jd首页下面很多专题，每个专题链接新的页面，展示专题商品信息】
  *
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/homesubject")
@@ -35,7 +34,7 @@ public class HomeSubjectController {
      * 列表
      */
     @RequestMapping("/list")
-    //("coupon:homesubject:list")
+    //@RequiresPermissions("coupon:homesubject:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = homeSubjectService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class HomeSubjectController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //("coupon:homesubject:info")
+    //@RequiresPermissions("coupon:homesubject:info")
     public R info(@PathVariable("id") Long id){
 		HomeSubjectEntity homeSubject = homeSubjectService.getById(id);
 
@@ -58,7 +57,7 @@ public class HomeSubjectController {
      * 保存
      */
     @RequestMapping("/save")
-    //("coupon:homesubject:save")
+    //@RequiresPermissions("coupon:homesubject:save")
     public R save(@RequestBody HomeSubjectEntity homeSubject){
 		homeSubjectService.save(homeSubject);
 
@@ -69,7 +68,7 @@ public class HomeSubjectController {
      * 修改
      */
     @RequestMapping("/update")
-    //("coupon:homesubject:update")
+    //@RequiresPermissions("coupon:homesubject:update")
     public R update(@RequestBody HomeSubjectEntity homeSubject){
 		homeSubjectService.updateById(homeSubject);
 
@@ -80,7 +79,7 @@ public class HomeSubjectController {
      * 删除
      */
     @RequestMapping("/delete")
-    //("coupon:homesubject:delete")
+    //@RequiresPermissions("coupon:homesubject:delete")
     public R delete(@RequestBody Long[] ids){
 		homeSubjectService.removeByIds(Arrays.asList(ids));
 

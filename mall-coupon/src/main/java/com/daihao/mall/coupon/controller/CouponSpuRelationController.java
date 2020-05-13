@@ -3,7 +3,6 @@ package com.daihao.mall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import com.daihao.mall.common.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +20,9 @@ import com.daihao.mall.common.utils.R;
 /**
  * 优惠券与产品关联
  *
- * @author daihao
- * @email 651433368@qq.com
- * @date 2020-04-07 21:23:59
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/couponspurelation")
@@ -35,7 +34,7 @@ public class CouponSpuRelationController {
      * 列表
      */
     @RequestMapping("/list")
-    //("coupon:couponspurelation:list")
+    //@RequiresPermissions("coupon:couponspurelation:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = couponSpuRelationService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class CouponSpuRelationController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    //("coupon:couponspurelation:info")
+    //@RequiresPermissions("coupon:couponspurelation:info")
     public R info(@PathVariable("id") Long id){
 		CouponSpuRelationEntity couponSpuRelation = couponSpuRelationService.getById(id);
 
@@ -58,7 +57,7 @@ public class CouponSpuRelationController {
      * 保存
      */
     @RequestMapping("/save")
-    //("coupon:couponspurelation:save")
+    //@RequiresPermissions("coupon:couponspurelation:save")
     public R save(@RequestBody CouponSpuRelationEntity couponSpuRelation){
 		couponSpuRelationService.save(couponSpuRelation);
 
@@ -69,7 +68,7 @@ public class CouponSpuRelationController {
      * 修改
      */
     @RequestMapping("/update")
-    //("coupon:couponspurelation:update")
+    //@RequiresPermissions("coupon:couponspurelation:update")
     public R update(@RequestBody CouponSpuRelationEntity couponSpuRelation){
 		couponSpuRelationService.updateById(couponSpuRelation);
 
@@ -80,7 +79,7 @@ public class CouponSpuRelationController {
      * 删除
      */
     @RequestMapping("/delete")
-    //("coupon:couponspurelation:delete")
+    //@RequiresPermissions("coupon:couponspurelation:delete")
     public R delete(@RequestBody Long[] ids){
 		couponSpuRelationService.removeByIds(Arrays.asList(ids));
 

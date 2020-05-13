@@ -2,12 +2,17 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://192.168.175.130:3306/mall_sms
+    url: jdbc:mysql://192.168.175.130:3306/mall_sms?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.jdbc.Driver
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: LTAI4GG4Pxxkhm7Egqd74GLL
+      secret-key: oxZ058KgAR3NtGOSvGs3KD2sE4wQn9
+      oss:
+        endponint: daihao.oss-cn-shenzhen.aliyuncs.com
   application:
     name: mall-coupon
 server:
@@ -18,3 +23,8 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+logging:
+  level:
+    com.daihao.mall: debug
+
+
