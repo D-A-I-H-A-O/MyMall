@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 
 @Service("wareSkuService")
@@ -36,19 +37,17 @@ public class WareSkuServiceImpl extends ServiceImpl<WareSkuDao, WareSkuEntity> i
      */
     @Override
     public List<SkuHasStockVo> getSkusHasStocK(List<Long> skuIds) {
-        skuIds.stream().map(skuId -> {
+        List<SkuHasStockVo> list = skuIds.stream().map(skuId -> {
             SkuHasStockVo skuHasStockVo = new SkuHasStockVo();
             //查询当前sku的总库存量
-
             Long count = baseMapper.getSkuHasStock(skuId);
 
             skuHasStockVo.setSkuId(skuId);
-            skuHasStockVo.setHasStock(count > 0);
+            skuHasStockVo.setHasStock(count == null ? false : count > 0);
             return skuHasStockVo;
-        });
+        }).collect(Collectors.toList());
 
-
-        return null;
+        return list;
     }
 
 }

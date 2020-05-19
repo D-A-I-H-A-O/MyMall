@@ -11,6 +11,6 @@ import java.util.List;
 @FeignClient("mall-search")
 public interface SearchFeignService {
     //上架商品 I
-    @RequestMapping("search")
+    @RequestMapping("/search/search")
     R productStatusUp(@RequestBody List<SkuEsModel> skuEsModels);
 }

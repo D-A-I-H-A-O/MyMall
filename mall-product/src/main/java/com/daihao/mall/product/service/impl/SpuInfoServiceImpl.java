@@ -1,5 +1,6 @@
 package com.daihao.mall.product.service.impl;
 
+import com.alibaba.fastjson.TypeReference;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -264,16 +265,16 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         //组装所需数据
         SkuEsModel skuEsModel = new SkuEsModel();
 
-        //查出当前spuId对应的所有sku信息
+        //1、查出当前spuId对应的所有sku信息
         List<SkuInfoEntity> skuInfoList = skuInfoService.getSkuBySpuId(spuId);
         List<Long> skuIdLList = skuInfoList.stream().map(SkuInfoEntity::getSkuId).collect(Collectors.toList());
 
-        //TODO 4、查询当前shu的所有可以被用来检索的规格属性
+        //2、查询当前shu的所有可以被用来检索的规格属性
         List<ProductAttrValueEntity> baseAttrs = attrValueService.baseAttrlistforspu(spuId);
         List<Long> attrIds = baseAttrs.stream().map(baseAttr -> {
             return baseAttr.getAttrId();
         }).collect(Collectors.toList());
-
+        //SELECT attr_id FROM pms_attr WHERE attr_id IN (?) and search_type = 1
         List<Long> searchAttrIds = attrService.selectSearchAttrIds(attrIds);
         Set<Long> idSet = new HashSet<>(searchAttrIds);
 
@@ -288,17 +289,18 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         Map<Long, Boolean> stockMap = null;
         try {
             //hasStock. hotScore
-            //TODO 1、发送远程调用,库存系统查询是否有库存
-            R<List<SkuHasStockVo>> hasStock = wareFenginService.getSkusHasStock(skuIdLList);
-            stockMap = hasStock.getData().stream().collect(Collectors.toMap(SkuHasStockVo::getSkuId, item -> item.getHasStock()));
-
+            //3、发送远程调用,库存系统查询是否有库存
+            R r = wareFenginService.getSkusHasStock(skuIdLList);
+            TypeReference<List<SkuHasStockVo>> typeReference = new TypeReference<List<SkuHasStockVo>>() {
+            };
+            stockMap = r.getData(typeReference).stream().collect(Collectors.toMap(SkuHasStockVo::getSkuId, item -> item.getHasStock()));
         } catch (Exception e) {
             log.error("库存服务查询异常:原因()", e);
         }
+        Map<Long, Boolean> finalStockMap = stockMap;
 
 
         //封装每个sku的信息
-        Map<Long, Boolean> finalStockMap = stockMap;
         List<SkuEsModel> upProductList = skuInfoList.stream().map(skuInfoEntity -> {
             SkuEsModel esModel = new SkuEsModel();
             BeanUtils.copyProperties(skuInfoEntity, esModel);
@@ -314,11 +316,10 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
                 esModel.setHasStock(finalStockMap.get(skuInfoEntity.getSkuId()));
             }
 
-
-            //TODO 2、热度评分
+            //热度评分
             esModel.setHotScore(0L);
 
-            //TODO 3、查询品牌和分类的名字信息
+            //查询品牌和分类的名字信息
             BrandEntity brand = brandService.getById(esModel.getBrandId());
             esModel.setBrandName(brand.getName());
             esModel.setBrandImg(brand.getLogo());
@@ -332,16 +333,41 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
             return esModel;
         }).collect(Collectors.toList());
 
+
         //5、将数据发送给es进行保存 mall-search
         R r = searchFeignService.productStatusUp(upProductList);
 
         if (r.getCode() == 0) {
             //远程调用成功
-            //TODO 修改当前spu的状态
+            //修改当前spu的状态
             baseMapper.updateStatusUp(spuId, ProductConstant.StatusEnum.SPU_UP.getCode());
         } else {
             //远程调用失败
             //TODO 重复调用 接口幂等性 重试机制
+            //Feign用流程
+
+            /**
+             *1 、构造请求数据,将对象转为json;
+             * RequestTemplate template = buildTemplateFromArgs. create(argv);
+             * 2、发送请求进行执行(执行成功会解码响应数据)
+             * executeAndDecode(template);
+             * veregnjava
+             * 3、执行请求会有重试机制
+             * 伪代码：            while (true) {
+             *                 try {
+             *                     executeAndDecode(template);
+             *                 } catch () {
+             *                     try {
+             *                         retryer.continueOrPropagate(e);
+             *                     } catch () {
+             *                         throw ex;
+             *                     }
+             *                     continue;
+             *                 }
+             *             }
+             */
+
+
         }
 
     }

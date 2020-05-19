@@ -27,7 +27,7 @@ public class ElasticSaveController {
     ProductSaveService productSaveService;
 
     //上架商品 I
-    @RequestMapping("search")
+    @RequestMapping("/search")
     public R productStatusUp(@RequestBody List<SkuEsModel> skuEsModels) {
         boolean b = false;
         try {
@@ -37,7 +37,7 @@ public class ElasticSaveController {
             return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(), BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
 
         }
-        if (b) {
+        if (!b) {
             return R.ok();
         } else {
             return R.error(BizCodeEnume.PRODUCT_UP_EXCEPTION.getCode(), BizCodeEnume.PRODUCT_UP_EXCEPTION.getMsg());
