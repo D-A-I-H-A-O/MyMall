@@ -9,6 +9,7 @@ import com.daihao.mall.product.dao.CategoryDao;
 import com.daihao.mall.product.entity.CategoryEntity;
 import com.daihao.mall.product.service.CategoryBrandRelationService;
 import com.daihao.mall.product.service.CategoryService;
+import com.daihao.mall.product.vo.Catalog2Vo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -118,6 +119,61 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
 
         return parentPath.toArray(new Long[parentPath.size()]);
+    }
+
+    /**
+     * 查询所有一级分类
+     *
+     * @return
+     */
+    @Override
+    public List<CategoryEntity> getLevel1Categorys() {
+        List<CategoryEntity> categoryEntities = baseMapper.selectList(new QueryWrapper<CategoryEntity>().eq("parent_cid", 0));
+
+        return categoryEntities;
+    }
+
+    /**
+     * 查出所有分类 返回首页json
+     *
+     * @return
+     */
+    @Override
+    public Map<String, List<Catalog2Vo>> getCatalogJson() {
+        //所有一级分类
+        List<CategoryEntity> level1Categorys = getLevel1Categorys();
+
+        //封装数据 map k,v 结构
+        Map<String, List<Catalog2Vo>> map = level1Categorys.stream().collect(Collectors.toMap(k -> k.getCatId().toString(), v -> {
+            //每一个的一级分类，查到这个一级分类的二级分类
+            List<CategoryEntity> category2Entities = baseMapper.selectList(new QueryWrapper<CategoryEntity>().eq("parent_cid", v.getCatId()));
+            List<Catalog2Vo> catelog2Vos = null;
+
+            if (category2Entities != null) {
+                catelog2Vos = category2Entities.stream().map(level2 -> {
+                    //封装catalog2Vo
+                    Catalog2Vo catalog2Vo = new Catalog2Vo(v.getCatId().toString(), null, level2.getCatId().toString(), level2.getName());
+                    //每一个二级分类，查到三级分类
+                    List<CategoryEntity> category3Entities = baseMapper.selectList(new QueryWrapper<CategoryEntity>().eq("parent_cid", level2.getCatId()));
+                    if (category3Entities != null) {
+                        List<Object> catalog3List = category3Entities.stream().map(level3 -> {
+                            //封装catalog3Vo
+                            Catalog2Vo.Catalog3Vo catalog3Vo = new Catalog2Vo.Catalog3Vo(level2.getCatId().toString(), level3.getCatId().toString(), level3.getName());
+                            return catalog3Vo;
+                        }).collect(Collectors.toList());
+                        //封装catalog3Vo到catalog2Vo
+                        catalog2Vo.setCatalog3List(catalog3List);
+                    }
+                    return catalog2Vo;
+                }).collect(Collectors.toList());
+            }
+            //返回v=catalog2Vo
+            return catelog2Vos;
+        }));
+
+
+        return map;
+
     }
 
 

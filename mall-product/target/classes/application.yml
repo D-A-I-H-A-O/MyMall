@@ -27,4 +27,8 @@ logging:
   level:
     com.daihao.mall: debug
 
+  jackson:
+    data-format: yyyy-MM-dd HH:mm:ss
 
+  thymeleaf:
+    cache: false
