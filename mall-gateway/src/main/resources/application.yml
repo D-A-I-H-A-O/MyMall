@@ -45,6 +45,13 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}
 
+         #nginx 要放最后
+        - id: mall_host_route
+          uri: lb://mall-product
+          predicates:
+            - Host=**.mymall.com,mymall.com
+
+
 #  在application.yml中配置spring.cloud.gateway路由规则，这里配置的是Query Route Predicate Factory，查询路由
 #  - yml文件数组格式,可以配置多个路由，id唯一，uri为匹配路由成功后转发地址
 #  predicates断言，查询路由，Query为固定，也可以配置多个，两个参数：一个请求参数，可选的正则表达式
