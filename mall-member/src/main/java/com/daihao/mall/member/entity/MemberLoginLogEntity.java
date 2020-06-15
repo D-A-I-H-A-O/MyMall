@@ -41,7 +41,7 @@ public class MemberLoginLogEntity implements Serializable {
 	 */
 	private String city;
 	/**
-	 * 登录类型[1-web，2-app]
+	 * 登录类型[1-com.daihao.mall.product.web，2-app]
 	 */
 	private Integer loginType;
 

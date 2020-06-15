@@ -134,19 +134,37 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
     }
 
     /**
+     * 根据传进分类筛选出对应级别
+     *
+     * @param list
+     * @param parent_cid
+     * @return
+     */
+    public List<CategoryEntity> getCategorys(List<CategoryEntity> list, Long parent_cid) {
+
+        List<CategoryEntity> collect = list.stream().filter(l -> parent_cid.equals(l.getParentCid())).collect(Collectors.toList());
+
+        return collect;
+    }
+
+    /**
      * 查出所有分类 返回首页json
      *
      * @return
      */
     @Override
     public Map<String, List<Catalog2Vo>> getCatalogJson() {
-        //所有一级分类
-        List<CategoryEntity> level1Categorys = getLevel1Categorys();
+
+        //查询出所有分类
+        List<CategoryEntity> selectList = baseMapper.selectList(null);
+
+        //先查出所有一级分类
+        List<CategoryEntity> level1Categorys = getCategorys(selectList, 0L);
 
         //封装数据 map k,v 结构
         Map<String, List<Catalog2Vo>> map = level1Categorys.stream().collect(Collectors.toMap(k -> k.getCatId().toString(), v -> {
             //每一个的一级分类，查到这个一级分类的二级分类
-            List<CategoryEntity> category2Entities = baseMapper.selectList(new QueryWrapper<CategoryEntity>().eq("parent_cid", v.getCatId()));
+            List<CategoryEntity> category2Entities = getCategorys(selectList, v.getCatId());
             List<Catalog2Vo> catelog2Vos = null;
 
             if (category2Entities != null) {
@@ -154,7 +172,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
                     //封装catalog2Vo
                     Catalog2Vo catalog2Vo = new Catalog2Vo(v.getCatId().toString(), null, level2.getCatId().toString(), level2.getName());
                     //每一个二级分类，查到三级分类
-                    List<CategoryEntity> category3Entities = baseMapper.selectList(new QueryWrapper<CategoryEntity>().eq("parent_cid", level2.getCatId()));
+                    List<CategoryEntity> category3Entities = getCategorys(selectList, level2.getCatId());
                     if (category3Entities != null) {
                         List<Object> catalog3List = category3Entities.stream().map(level3 -> {
                             //封装catalog3Vo

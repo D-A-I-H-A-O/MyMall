@@ -28,7 +28,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-com.daihao.mall.product.web</artifactId>
         </dependency>
 
         <dependency>

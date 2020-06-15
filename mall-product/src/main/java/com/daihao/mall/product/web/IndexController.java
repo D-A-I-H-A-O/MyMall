@@ -24,7 +24,7 @@ public class IndexController {
     @Autowired
     CategoryService categoryservice;
 
-    @GetMapping({"/", "index.html" })
+    @GetMapping({"/", "index.html"})
     public String indexPage(Model model) {
         List<CategoryEntity> categoryEntities = categoryservice.getLevel1Categorys();
         model.addAttribute("categorys", categoryEntities);
@@ -37,6 +37,16 @@ public class IndexController {
         Map<String, List<Catalog2Vo>> map = categoryservice.getCatalogJson();
 
         return map;
+    }
+
+    /**
+     * 简单请求
+     * @return
+     */
+    @ResponseBody
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
     }
 
 

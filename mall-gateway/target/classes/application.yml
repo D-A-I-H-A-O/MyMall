@@ -24,7 +24,7 @@ spring:
           uri: lb://mall-product
           predicates:
             #当请求为指定路径 断言为真 **代表任意 这个路径需往上写提高优先级不被/api/**给拦截
-            - Path=/api/product/**
+            - Path=/api/product/**,/hello
           filters:
             #断言为真，重写路径/api/(?<segment>.*)改为/$\{segment}
             #例请求http://localhost:88/api/product/category/list/tree会改为
