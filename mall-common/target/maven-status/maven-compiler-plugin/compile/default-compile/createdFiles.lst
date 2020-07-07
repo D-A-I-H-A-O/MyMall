@@ -1,6 +1,7 @@
 com\daihao\mall\common\utils\Constant$CloudService.class
 com\daihao\mall\common\valid\ListValueConstraintValidator.class
 com\daihao\mall\common\constant\WareConstant$PurchaseDetailStatusEnum.class
+com\daihao\mall\common\es\SkuEsModel$Attrs.class
 com\daihao\mall\common\utils\Constant.class
 com\daihao\mall\common\valid\UpdateGroup.class
 com\daihao\mall\common\constant\ProductConstant.class
@@ -16,11 +17,16 @@ com\daihao\mall\common\constant\ProductConstant$AttrEnum.class
 com\daihao\mall\common\to\SpuBoundTo.class
 com\daihao\mall\common\exception\BizCodeEnume.class
 com\daihao\mall\common\utils\Constant$MenuType.class
+com\daihao\mall\common\es\SkuEsModel.class
+com\daihao\mall\common\utils\RedisUtil.class
 com\daihao\mall\common\valid\AddGroup.class
 com\daihao\mall\common\constant\WareConstant.class
+com\daihao\mall\common\to\SkuHasStockVo.class
 com\daihao\mall\common\utils\SpringContextUtils.class
+com\daihao\mall\common\constant\ProductConstant$StatusEnum.class
 com\daihao\mall\common\utils\RRException.class
 com\daihao\mall\common\to\MemberPrice.class
 com\daihao\mall\common\utils\PageUtils.class
 com\daihao\mall\common\xss\HTMLFilter.class
 com\daihao\mall\common\utils\Constant$ScheduleStatus.class
+com\daihao\mall\common\config\RedisConfig.class

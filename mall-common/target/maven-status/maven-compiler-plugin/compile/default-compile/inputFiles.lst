@@ -1,3 +1,4 @@
+D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\to\SkuHasStockVo.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils\PageUtils.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils\RRException.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\xss\HTMLFilter.java
@@ -6,6 +7,7 @@ D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\to\SkuReducti
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\valid\UpdateGroup.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\exception\BizCodeEnume.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\constant\WareConstant.java
+D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\es\SkuEsModel.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\valid\ListValue.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\to\SpuBoundTo.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\xss\SQLFilter.java
@@ -14,7 +16,9 @@ D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\to\MemberPric
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\valid\ListValueConstraintValidator.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils\Query.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\constant\ProductConstant.java
+D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\config\RedisConfig.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils\R.java
+D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils\RedisUtil.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\MallCommonApplication.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils\Constant.java
 D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\valid\UpdateStatusGroup.java

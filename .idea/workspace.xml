@@ -1,791 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="903c30da-2ae1-4f58-b3cc-fcea82e49aee" name="Default Changelist" comment="nginx路由">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_34.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_3_RELEASE.xml" beforeDir="false" />
+    <list default="true" id="903c30da-2ae1-4f58-b3cc-fcea82e49aee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/config/MyCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/config/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/utils/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/.factorypath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/daihao/mall/common/utils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/daihao/mall/common/utils/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-coupon/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/.factorypath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-coupon/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/mall-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/mall-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/mall-common-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/mall-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/mall-coupon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/mall-coupon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-coupon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/.factorypath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/mall-gateway.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/mall-member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/mall-member.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/src/main/java/com/daihao/mall/member/entity/MemberLoginLogEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/src/main/java/com/daihao/mall/member/entity/MemberLoginLogEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/src/main/resources/src/views/modules/member/memberloginlog-add-or-update.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/src/main/resources/src/views/modules/member/memberloginlog-add-or-update.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/src/main/resources/src/views/modules/member/memberloginlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/src/main/resources/src/views/modules/member/memberloginlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/target/classes/src/views/modules/member/memberloginlog-add-or-update.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/src/views/modules/member/memberloginlog-add-or-update.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-member/target/classes/src/views/modules/member/memberloginlog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mall-member/target/classes/src/views/modules/member/memberloginlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/.factorypath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-order/mall-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/mall-order.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/src/test/java/com/daihao/mall/order/MallOrderApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/src/test/java/com/daihao/mall/order/MallOrderApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/MallOrderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/MallOrderApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderOperateHistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderOperateHistoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnApplyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnApplyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnReasonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderReturnReasonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderSettingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/OrderSettingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/PaymentInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/PaymentInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/RefundInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/controller/RefundInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderItemDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderOperateHistoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderOperateHistoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnApplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnApplyDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnReasonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderReturnReasonDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderSettingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/OrderSettingDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/PaymentInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/PaymentInfoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/RefundInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/dao/RefundInfoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderItemEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderItemEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderOperateHistoryEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderOperateHistoryEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnApplyEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnApplyEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnReasonEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderReturnReasonEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderSettingEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/OrderSettingEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/PaymentInfoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/PaymentInfoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/RefundInfoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/entity/RefundInfoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderOperateHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderOperateHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnApplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnApplyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnReasonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderReturnReasonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderSettingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/OrderSettingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/PaymentInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/PaymentInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/RefundInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/RefundInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderOperateHistoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderOperateHistoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnApplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnApplyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnReasonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderReturnReasonServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderSettingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/OrderSettingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/PaymentInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/PaymentInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/RefundInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-order/target/classes/com/daihao/mall/order/service/impl/RefundInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-order/target/test-classes/com/daihao/mall/order/MallOrderApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/mall-product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/mall-product.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/java/com/daihao/mall/product/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/css/GL.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/css/swiper-3.4.2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/022649c69d4df547861d434b3fba03e1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/55fbb8a6N64863ad3.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/56fc949bN303e2220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/57e8babbNe482d777.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58004d6dN2927f0f7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58171918N852b09d5.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58171aa5N1db78d3a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58171aaeNa037a265.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58174114N2c0891f0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5817413fN89413626.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58174160N8b476d06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58174176Na66a232a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58174253N404b51d3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5819582cN75553c9d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/582c1b70Nd6eebaf8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/582c1c53N04808535.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58414f7cN08bd0078.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/584d546eN0d0ae158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/584d54ebN3849b669.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5852299fN1840f35a.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/585229bdNc20796ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/585229bdNc20796ec.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58522b1bN916da74b.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58522b9dNf06d6f3d.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/585265d0Ndd205e6e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/586dca91N13e0dbd9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/586dcbf6Neaed8efb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58be62b1N126a1f9f.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58d87003Nd0adfd9c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58de4423Ndcb46a1c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58f6c652N9c0d4316.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/58ffffd8N892ce4a8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59060d71N4d1a4658.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/591ebe1cN166d2c52.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/591ebe24Nb8baeb70.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/591ebe2bN324c4010.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5923f3b6N8690b3e7.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59251deeN5daf7ec3.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5927ee7aN89f48ffd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5927ef42Nc91cffc7.jpg!cc_200x140" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5928f908N45ec28e3.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/592935aaNf9c009fe.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/592e3193Nd62486d2.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/592f6f19N8de94497.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/592f74e2N139a9e22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/592fb61bNa308c08f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/593ff4a3Nde9d79b0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5941f7ddNc733d12f.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59437174N541210b1.jpg!q90 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59437174N541210b1.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5943d16aNa2b79d40.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/594737f8Na6453e6e.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5948b387N1e3bff83.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5948bb23N6da9eb71.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5949230eNc2fb7b61.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5950ca4bN6ab3d2f8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5950ca84N9509b283.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5950cb54N467732a3.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5952193bN4b514c65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5953202dN0dc196bf.jpg!q90.webp (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5953202dN0dc196bf.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/595493f7Nacab54de.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/595b0181N2a89a23d.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5965c3ceN748ecfa7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59683495N4b2c0bee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/597944aeNd644dbd8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59805e0aNdbba0e5f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59812ef4N34736f09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/598182d7Ne0cdb795.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/598ab6bfNf3d43817.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59a38d6eNe9adf934.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59a51cafn0fec6121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59ad341eN5a961eb2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59b10968N0380c428.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59b26e7dN59707ce1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59b6237aN5062a809.png!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59b6238cNbe9094c3.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c1c15dNff3351e4.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c38e02N4512c64f.jpg!q90 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c38e02N4512c64f.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c4c8d8Ndb34ffd7.png!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c86372Neaaa522e.jpg!q90 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c86372Neaaa522e.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c869daN3b6aa827.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59c8be04Nbfb1adca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59dae84fN35ff9333.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59dc9ab5N372deac1.png!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59dd8e33Nd0cb79df.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59e56045N56ae92f1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59e5deffN82945fbf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59e96ce3N82a11ae2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59eab346N8cd17560.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59ed51ddN8eefe457.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59f00874N1918c111.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59f814e7N34bad14a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/59fabed5N20e06cc3.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a017f04Ndbaecd9a.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a017ffeN09d1ecc5.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a01802bN92b4d865.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a01805dN0bfd57b9.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a018083N3c20d3ba.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a02d06cN1e37012f.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0459f0N4fa7eca0.png!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a050212N96e12563.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0502a0Nf18e2c44.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a06b7b4Nc879eca0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a07d37cN7b4b1828.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a086aadNdd4a2d3d.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a086b2cN0353b2df.png!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a095387N0626036b.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a096cefN2295f4c5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a097363Nf5fb64a6.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0bae3dNd70d9115.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0bb299N382e74a9.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0bb29bN598fefa4.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0bb2b1N68588d19.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0bb2bcNc59b9ab7.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0be3d7N53b2eb31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0be40eN50f580c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0c0f0aN31dfa288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0ce692N1a6c1453.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0ced0cN5bb4e9aa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0cee74N9801714c (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0cee74N9801714c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0cf69eN35720550.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0cfffeNc95c4e70.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0d52f6N5bf1da85.png!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e3ab4N84732c2b.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e3b55Nb7a711ca.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e64f0N68973e71.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e6f98N95468341.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e7859N41cb7d3d.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e78afNae89c41c.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e78f1N91fdc907.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e7905N75694aea.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e7927N92955da4.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e794cNe723d8ea.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e96deN13f03769.png!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e9d5fNe8a30396.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e9d73Nc16f0a0d.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e9e25N12c45d0d.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e9e4eN3d592b05.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a0e9e7aNef8577dd.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a102cdcN7e693898.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a122dc9N5ecac6db.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a122e02Nff6d7d36 (1).jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a122e02Nff6d7d36.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1233b5Nb10b9cbc (1).jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1233b5Nb10b9cbc.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a123702Nd17543ed.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a124b62Na95768ed.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1273dbN740798e9.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1278e8Nb24df2b2.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1278f7N3e0b48e7.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a12a25fN96769d3c.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a137d70N84bdb566.png!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a138438N19d98566.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13bf0bNe1606e58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13bf0bNe1606e58.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13c218N7c86dc71.jpg!cc_200x140" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13c995N31b5dfd6.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13cf44N3b96a07f.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13d2c3Nc1d73d88.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a13f30fN5ed4a260.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a14d244N753235ee.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a14d849Ne65b2700.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a14f104N35803b3a.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1530ceN68e342c0.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a153c78N587b6883.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a153de2Nf8b4fd68.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a154759N5385d5d6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a154759N5385d5d6.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a154c8dN4135f0ca.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a15541bNb9c925af.jpg!cc_200x140" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a155909Nfaeaff7d.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a155996N3069562f.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a155a78N9e390f90.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a155b66N1533832a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a162e07N716d0432.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1634a4Neabf70d5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1634c8N8d8d63d9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1635cfNafa92fcf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1645d7Nb450ea8f.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a166870N0df26ef0.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a16712eN5b12d2a1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a167313N21417853.jpg!q90.webp (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a167313N21417853.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a167906N51dddb51.png!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a168352N61f45409.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1683e0N115c3304.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a168d1eN8d09a8b8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a169857N4adcec76.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a169882Nd454bf29.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1698b7Nd63c86ed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1698b7Nd63c86ed.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a16a1e9N0cdb8522.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a16a84fN6dc1786f.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a16a89bN7f527b23.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a16a944N782483e8.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a16a99fN4970f871.jpg!q90.webp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a176f84N5e5df987.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a176f84N5e5df987.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1775a6N2f1b3538.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177937N733d5884.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177b5dNf48fe985.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177b92N9aef1a1a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177bbdNc45996ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177c43N7a83454e.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177c9fNe57ff54f.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a177d99Nd0347bf1.jpg!cc_200x140" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a178024N81864411.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a178209Ne2b3ec28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1783a8N7d7f6988.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a179689N6507744b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17b2c2Na8f437b9.jpg!cc_200x140" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17b56fNd535f5ec.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17c2c8N92fd685b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17c3feN9cd403e8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17cc40N54dc1b08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17cd2aN6a99aad7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17ced0Nc020e244 (1).jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17ced0Nc020e244.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17cf3fNf43c3ea8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17cf73Nf6d5c61a.jpg!q90 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17cf73Nf6d5c61a.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17d1d0Nd648ae8b.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17d1d2Nac4c7ead.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17d5e7N220f95a8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17d9ceN8e7db1de.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e0b1Nf83f3d99.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e0b1Nf83f3d99.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e0ecN6276dd8c.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e192Nc92f6872.jpg!q90 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e192Nc92f6872.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e385N091131b5.jpg!q90 (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e385N091131b5.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e3abNfc2ae745.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e3c1N8ff175c4.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e3e4N5d609546.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e425N6bebc06e.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e4a2N3e7d7612.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e4cdN54235936.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e4e8Ne29c2aa0.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e4f5N540cb3d0.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17e4f5Nc289bcdd.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17ec77Nd92f9470.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a17f8f5Nc7bae5ef.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1845e6Nc80084d7.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a185679N232e0154.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1997ddN6ef79ca4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1997f7Nc0bf5a6f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1a21dbN1f27e0e9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1ab2a1N3c4258e8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1ab2beN083922a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1ab2d3N254ce6eb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1ab2ecNfae791f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1ab314Ne65b27b0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1ab32bN2c6e8ebd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1b6757N8a831b02.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1b677bNe5a0a902.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1b83c7Nded9c556.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1e5ce2N034ce344.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/5a1e5ceaNecb55079.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/JD_ash9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/baitiao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/blank.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/dianyingpiao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/ewm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/ewm1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/fa3f24a70d38bd439261cb7439e517a5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/foot (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/foot (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-center (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-center (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-center (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (10).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (100).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (11).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (12).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (13).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (14).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (15).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (16).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (17).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (18).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (19).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (20).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (21).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (22).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (23).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (24).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (25).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (26).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (27).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (28).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (29).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (30).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (31).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (32).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (33).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (34).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (35).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (36).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (37).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (38).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (39).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (40).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (41).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (42).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (43).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (44).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (45).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (46).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (47).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (48).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (49).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (5).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (50).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (51).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (52).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (53).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (54).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (55).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (56).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (57).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (58).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (59).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (6).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (60).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (61).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (62).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (63).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (64).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (65).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (66).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (67).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (68).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (69).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (7).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (70).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (71).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (72).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (73).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (74).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (75).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (76).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (77).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (78).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (79).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (8).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (80).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (81).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (82).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (83).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (84).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (85).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (86).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (87).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (88).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (89).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (9).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (90).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (91).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (92).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (93).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (94).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (95).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (96).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (97).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (98).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g-con (99).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/g9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gouwuche.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (6).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (7).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/gts (8).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/huafei.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/huli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/huochepiao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/img_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/jiayouka.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/jipiao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/jiudian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/left-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/licai.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lipinka.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/logo33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/logoggg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/lunbo8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n10.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n11.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n12.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n13.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n14.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n15.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n16.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n6.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n7.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/n9.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/no_login.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/pt_qrcode@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/qianbao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/qiyegou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/rBEhU1NY5kQIAAAAAAIuB0gUCK0AAMZvAAdP2oAAi4f269.jpg!q90.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/right-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s10.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s11.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s13.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s14.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s15.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s16.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s6.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s7.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/s9.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/saved_resource" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/saved_resource(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list(2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_dayia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_dayib.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_dayic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_kejia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_kejib.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_kejic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_peijiana.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_peijianb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_peijianc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_shoujia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_shoujib.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_shoujic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_xiezia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_xiezib.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_xiezic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_xiyia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_xiyib.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_center_list_xiyic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_left_list1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_left_list2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_left_list3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_left_list4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_left_list5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_left_list6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol(1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol(2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_baijiu (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_baijiu (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_baijiu (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_baijiu (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_baijiu (5).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_baijiu (6).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_lingshi (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_lingshi (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_lingshi (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_lingshi (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_lingshi (5).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_lingshi (6).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_mian (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_mian (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_mian (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_mian (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_mian (5).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_mian (6).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (10).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (11).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (12).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (5).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (6).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (7).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (8).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_find_right_list_ul_ol_naifen (9).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_img (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_img (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_img (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_left_list_img (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_left_list_img (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_left_list_img (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_left_list_img (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_header_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_list (1).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_list (2).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_list (3).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_list (4).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_list (5).webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_ling_right_list.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_header_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_img9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_right_img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/section_second_list_right_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/shi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/skygreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/sprite_entrylive@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/sprite_fs@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/taoxin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/touxiang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w6.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w7.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/w8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wg9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wl.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/wo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/xiazai1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/xinxi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y1.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y6.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y7.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/y8.jpg!q90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/youxi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/img/zhongchou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/catalogLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/jquery-3.1.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/left,top.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/secend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/swiper-3.4.2.jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/swiper-3.4.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/text.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/static/index/js/zz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-search/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/src/test/java/com/daihao/mall/product/MallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/src/test/java/com/daihao/mall/product/MallProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/classes/com/daihao/mall/product/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/mall-product-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/mall-product-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/surefire-reports/TEST-com.daihao.mall.product.MallProductApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/surefire-reports/com.daihao.mall.product.MallProductApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-product/target/test-classes/com/daihao/mall/product/MallProductApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-product/target/test-classes/com/daihao/mall/product/MallProductApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-search/mall-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/mall-search.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-third-party/mall-third-party.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/mall-third-party.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-third-party/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-third-party/replay_pid17952.log" beforeDir="false" afterPath="$PROJECT_DIR$/mall-third-party/replay_pid17952.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ware/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/.factorypath" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-ware/mall-ware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/mall-ware.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-ware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ware/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/.factorypath" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-fast/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-fast/renren-fast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/renren-fast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/static/swagger/swagger-ui-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/static/swagger/swagger-ui-bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/static/swagger/swagger-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/static/swagger/swagger-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/target/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/target/classes/static/swagger/swagger-ui-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/target/classes/static/swagger/swagger-ui-bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/target/classes/static/swagger/swagger-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/target/classes/static/swagger/swagger-ui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/renren-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/renren-generator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/RenrenApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/config/DbConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/controller/SysGeneratorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/GeneratorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/MySQLGeneratorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/OracleGeneratorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/PostgreSQLGeneratorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/dao/SQLServerGeneratorDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/entity/ColumnEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/entity/TableEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/service/SysGeneratorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/DateUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/GenUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/PageUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/Query.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/RRException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/io/renren/utils/RRExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-generator/target/classes/template/Controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/target/classes/template/Controller.java.vm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -808,6 +84,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -858,12 +135,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gmall" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14967743" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="profiler.calltree.filter" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -876,65 +153,68 @@
       <recent name="D:\IDEWork\MyMall\mall-product\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.daihao.mall.common" />
       <recent name="com.daihao.mall.product" />
       <recent name="com.daihao.mall.order" />
       <recent name="com.daihao.mall.coupon" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.daihao.mall.product.utils" />
+      <recent name="com.daihao.mall.product.config" />
       <recent name="com.daihao.mall.product.vo" />
       <recent name="com.daihao.mall.common.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common" />
       <recent name="D:\IDEWork\MyMall\mall-product\src\main\resources\static" />
       <recent name="D:\IDEWork\MyMall\mall-search\src\main\resources" />
       <recent name="D:\IDEWork\MyMall\mall-product\src\main\java\com\daihao\mall\product\controller" />
       <recent name="D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common\utils" />
-      <recent name="D:\IDEWork\MyMall\mall-common\src\main\java\com\daihao\mall\common" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MallProductApplication">
-    <configuration name="MallSearchApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-search" />
+    <configuration name="MallProductApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="PATTERN" value="com.daihao.mall.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
-      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.daihao.mall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.product.MallProductApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MallSearchApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-search" />
+    <configuration name="MallProductApplicationTests.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="PATTERN" value="com.daihao.mall.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
-      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.daihao.mall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.product.MallProductApplicationTests" />
+      <option name="METHOD_NAME" value="testRedis" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MallSearchApplicationTests.index" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mall-search" />
+    <configuration name="MallProductApplicationTests.testRedisson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.daihao.mall.search.*" />
+          <option name="PATTERN" value="com.daihao.mall.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.daihao.mall.search" />
-      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.search.MallSearchApplicationTests" />
-      <option name="METHOD_NAME" value="index" />
+      <option name="PACKAGE_NAME" value="com.daihao.mall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.daihao.mall.product.MallProductApplicationTests" />
+      <option name="METHOD_NAME" value="testRedisson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1044,11 +324,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MallProductApplicationTests.testRedisson" />
+        <item itemvalue="JUnit.MallProductApplicationTests.testRedis" />
+        <item itemvalue="JUnit.MallProductApplicationTests" />
         <item itemvalue="JUnit.MallSearchApplicationTests.searchData" />
         <item itemvalue="JUnit.MallSearchApplicationTests.search" />
-        <item itemvalue="JUnit.MallSearchApplicationTests.index" />
-        <item itemvalue="JUnit.MallSearchApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.MallSearchApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1123,6 +403,19 @@
       <workItem from="1591272766388" duration="3034000" />
       <workItem from="1591440978769" duration="4335000" />
       <workItem from="1591497850900" duration="2913000" />
+      <workItem from="1592228423006" duration="943000" />
+      <workItem from="1593349622532" duration="2936000" />
+      <workItem from="1593352620779" duration="1559000" />
+      <workItem from="1593354209919" duration="836000" />
+      <workItem from="1593355098833" duration="111000" />
+      <workItem from="1593604586129" duration="379000" />
+      <workItem from="1593604988294" duration="90000" />
+      <workItem from="1593605099351" duration="6893000" />
+      <workItem from="1593771410414" duration="1236000" />
+      <workItem from="1593772671311" duration="824000" />
+      <workItem from="1593861891032" duration="2694000" />
+      <workItem from="1594038841681" duration="143000" />
+      <workItem from="1594124316452" duration="5920000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1585837230790</created>
@@ -1201,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590075859721</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="压测 优化">
+      <created>1592228518114</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592228518114</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1230,7 +530,8 @@
     <MESSAGE value="商品上架" />
     <MESSAGE value="nginx路由" />
     <MESSAGE value="首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页" />
+    <MESSAGE value="压测 优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="压测 优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="984" y="158" key="#Custom_Plugin_Repositories" timestamp="1586958691651">
@@ -1249,18 +550,18 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="301" y="346" key="#com.intellij.ide.util.MemberChooser/0.0.2160.1400@0.0.2160.1400" timestamp="1590065506790" />
-    <state x="646" y="612" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590064834193">
+    <state x="646" y="612" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593351631446">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="646" y="612" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1590064834193" />
-    <state x="824" y="560" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1590064837887">
+    <state x="646" y="612" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1593351631446" />
+    <state x="824" y="560" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1593351635775">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="824" y="560" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2160.1400@0.0.2160.1400" timestamp="1590064837887" />
-    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587907188663">
+    <state x="824" y="560" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2160.1400@0.0.2160.1400" timestamp="1593351635775" />
+    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594130407959">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1587907188663" />
+    <state x="747" y="389" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1594130407959" />
     <state x="1287" y="392" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589378451522">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
@@ -1269,10 +570,10 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="743" y="154" key="#renren-fast/Dockerfile/0.0.2160.1400@0.0.2160.1400" timestamp="1586440066893" />
-    <state x="494" y="275" key="CommitChangelistDialog2" timestamp="1590075857459">
+    <state x="494" y="275" key="CommitChangelistDialog2" timestamp="1592228514132">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="494" y="275" key="CommitChangelistDialog2/0.0.2160.1400@0.0.2160.1400" timestamp="1590075857459" />
+    <state x="494" y="275" key="CommitChangelistDialog2/0.0.2160.1400@0.0.2160.1400" timestamp="1592228514132" />
     <state width="500" height="582" key="DebuggerActiveHint" timestamp="1589898131119">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
@@ -1281,54 +582,54 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="93" y="181" key="DiffContextDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1590075762928" />
-    <state x="937" y="215" width="540" height="698" key="FileChooserDialogImpl" timestamp="1590064080790">
+    <state x="523" y="190" width="540" height="698" key="FileChooserDialogImpl" timestamp="1593772883754">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="937" y="215" width="540" height="698" key="FileChooserDialogImpl/0.0.2160.1400@0.0.2160.1400" timestamp="1590064080790" />
-    <state width="2107" height="227" key="GridCell.Tab.0.bottom" timestamp="1591450159278">
+    <state x="523" y="190" width="540" height="698" key="FileChooserDialogImpl/0.0.2160.1400@0.0.2160.1400" timestamp="1593772883754" />
+    <state width="2107" height="248" key="GridCell.Tab.0.bottom" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.0.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159278" />
-    <state width="2107" height="227" key="GridCell.Tab.0.center" timestamp="1591450159278">
+    <state width="2107" height="248" key="GridCell.Tab.0.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.0.center" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.0.center/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159278" />
-    <state width="2107" height="227" key="GridCell.Tab.0.left" timestamp="1591450159278">
+    <state width="2107" height="248" key="GridCell.Tab.0.center/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.0.left" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.0.left/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159278" />
-    <state width="2107" height="227" key="GridCell.Tab.0.right" timestamp="1591450159278">
+    <state width="2107" height="248" key="GridCell.Tab.0.left/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.0.right" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.0.right/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159278" />
-    <state width="2107" height="227" key="GridCell.Tab.1.bottom" timestamp="1591450159155">
+    <state width="2107" height="248" key="GridCell.Tab.0.right/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.1.bottom" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.1.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159155" />
-    <state width="2107" height="227" key="GridCell.Tab.1.center" timestamp="1591450159155">
+    <state width="2107" height="248" key="GridCell.Tab.1.bottom/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.1.center" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.1.center/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159155" />
-    <state width="2107" height="227" key="GridCell.Tab.1.left" timestamp="1591450159155">
+    <state width="2107" height="248" key="GridCell.Tab.1.center/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.1.left" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.1.left/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159155" />
-    <state width="2107" height="227" key="GridCell.Tab.1.right" timestamp="1591450159155">
+    <state width="2107" height="248" key="GridCell.Tab.1.left/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
+    <state width="2107" height="248" key="GridCell.Tab.1.right" timestamp="1594135328077">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state width="2107" height="227" key="GridCell.Tab.1.right/0.0.2160.1400@0.0.2160.1400" timestamp="1591450159155" />
+    <state width="2107" height="248" key="GridCell.Tab.1.right/0.0.2160.1400@0.0.2160.1400" timestamp="1594135328077" />
     <state x="995" y="277" key="Maven.ArtifactSearchDialog" timestamp="1585838953287">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="995" y="277" key="Maven.ArtifactSearchDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1585838953287" />
-    <state x="1428" y="348" key="RollbackChangesDialog" timestamp="1590056475813">
+    <state x="1428" y="348" key="RollbackChangesDialog" timestamp="1593350125203">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="1428" y="348" key="RollbackChangesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1590056475813" />
-    <state x="284" y="241" width="1229" height="883" key="SettingsEditor" timestamp="1589380401995">
+    <state x="1428" y="348" key="RollbackChangesDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1593350125203" />
+    <state x="284" y="241" width="1229" height="883" key="SettingsEditor" timestamp="1593605078394">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="284" y="241" width="1229" height="883" key="SettingsEditor/0.0.2160.1400@0.0.2160.1400" timestamp="1589380401995" />
+    <state x="284" y="241" width="1229" height="883" key="SettingsEditor/0.0.2160.1400@0.0.2160.1400" timestamp="1593605078394" />
     <state x="1461" y="603" key="VCS.ChangelistChooser" timestamp="1585837195544">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
@@ -1337,14 +638,14 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="1482" y="605" key="VCS.EditChangelistDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1585837191483" />
-    <state x="692" y="332" key="Vcs.Push.Dialog.v2" timestamp="1590076422393">
+    <state x="692" y="332" key="Vcs.Push.Dialog.v2" timestamp="1592228528790">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="692" y="332" key="Vcs.Push.Dialog.v2/0.0.2160.1400@0.0.2160.1400" timestamp="1590076422393" />
-    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587912200404">
+    <state x="692" y="332" key="Vcs.Push.Dialog.v2/0.0.2160.1400@0.0.2160.1400" timestamp="1592228528790" />
+    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593604832771">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2160.1400@0.0.2160.1400" timestamp="1587912200404" />
+    <state x="839" y="598" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2160.1400@0.0.2160.1400" timestamp="1593604832771" />
     <state x="534" y="375" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589889847129">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
@@ -1353,26 +654,26 @@
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state width="1590" height="705" key="documentation.popup.size/0.0.2160.1400@0.0.2160.1400" timestamp="1589100620989" />
-    <state x="453" y="394" width="933" height="738" key="find.popup" timestamp="1591499202716">
+    <state x="1227" y="346" width="933" height="738" key="find.popup" timestamp="1594134570547">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="453" y="394" width="933" height="738" key="find.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1591499202716" />
-    <state x="737" y="447" key="git4idea.merge.GitPullDialog" timestamp="1589888829746">
+    <state x="1227" y="346" width="933" height="738" key="find.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1594134570547" />
+    <state x="737" y="447" key="git4idea.merge.GitPullDialog" timestamp="1593604819668">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="737" y="447" key="git4idea.merge.GitPullDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1589888829746" />
-    <state x="562" y="276" width="1598" height="695" key="new project wizard" timestamp="1589035120586">
+    <state x="737" y="447" key="git4idea.merge.GitPullDialog/0.0.2160.1400@0.0.2160.1400" timestamp="1593604819668" />
+    <state x="53" y="214" width="1598" height="695" key="new project wizard" timestamp="1593772702914">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="562" y="276" width="1598" height="695" key="new project wizard/0.0.2160.1400@0.0.2160.1400" timestamp="1589035120586" />
+    <state x="53" y="214" width="1598" height="695" key="new project wizard/0.0.2160.1400@0.0.2160.1400" timestamp="1593772702914" />
     <state x="652" y="327" key="run.anything.popup" timestamp="1590067590721">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
     <state x="652" y="327" key="run.anything.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1590067590721" />
-    <state x="659" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1590067538613">
+    <state x="890" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1594134810365">
       <screen x="0" y="0" width="2160" height="1400" />
     </state>
-    <state x="659" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1590067538613" />
+    <state x="890" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2160.1400@0.0.2160.1400" timestamp="1594134810365" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

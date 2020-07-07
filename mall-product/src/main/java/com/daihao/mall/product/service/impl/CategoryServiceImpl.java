@@ -1,5 +1,8 @@
 package com.daihao.mall.product.service.impl;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -9,15 +12,16 @@ import com.daihao.mall.product.dao.CategoryDao;
 import com.daihao.mall.product.entity.CategoryEntity;
 import com.daihao.mall.product.service.CategoryBrandRelationService;
 import com.daihao.mall.product.service.CategoryService;
+import com.daihao.mall.product.utils.RedisUtil;
 import com.daihao.mall.product.vo.Catalog2Vo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
+import redis.clients.jedis.Jedis;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -27,6 +31,9 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
     @Autowired
     CategoryBrandRelationService categoryBrandRelationService;
+
+    @Autowired
+    RedisUtil redisUtil;
 
 
     @Override
@@ -126,8 +133,12 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
      *
      * @return
      */
+
     @Override
+    @Cacheable(value = "categorys", key = "#root.method.name")
     public List<CategoryEntity> getLevel1Categorys() {
+        System.out.println("查询所有一级分类");
+
         List<CategoryEntity> categoryEntities = baseMapper.selectList(new QueryWrapper<CategoryEntity>().eq("parent_cid", 0));
 
         return categoryEntities;
@@ -149,15 +160,68 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
     /**
      * 查出所有分类 返回首页json
-     *
-     * @return
      */
     @Override
     public Map<String, List<Catalog2Vo>> getCatalogJson() {
+        //加入缓存逻辑
+        Jedis jedis = redisUtil.getJedis();
+        String catalogJson = jedis.get("catalogJson");
 
+        Map<String, List<Catalog2Vo>> json = null;
+
+
+        //缓存存在 转换返回
+        if (!StringUtils.isEmpty(catalogJson)) {
+            json = JSONObject.parseObject(catalogJson, new TypeReference<Map<String, List<Catalog2Vo>>>() {
+            });
+            return json;
+        }
+
+        //缓存没有从数据查询
+        json = getCatalogJsonFromDBWithRedisLock();
+        //转成str 加入缓存
+        String jsonString = JSON.toJSONString(json);
+        jedis.set("catalogJson", jsonString);
+
+        return json;
+    }
+
+    public Map<String, List<Catalog2Vo>> getCatalogJsonFromDBWithRedisLock() {
+        Jedis jedis = redisUtil.getJedis();
+        //加锁
+        String token = UUID.randomUUID().toString();
+        String lock = jedis.set("lock", token, "NX", "EX", 20);
+        System.out.println(lock);
+
+        Map<String, List<Catalog2Vo>> map = null;
+        //加锁成功
+        if ("ok".equals(lock)) {
+            map = getCatalogJsonFromDB();
+            //删除锁 lua脚本
+            String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+            jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList(token));
+            return map;
+        } else {
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //自旋
+            return getCatalogJsonFromDBWithRedisLock();
+        }
+
+    }
+
+
+    /**
+     * 从数据库获取数据并封装返回
+     *
+     * @return
+     */
+    public Map<String, List<Catalog2Vo>> getCatalogJsonFromDB() {
         //查询出所有分类
         List<CategoryEntity> selectList = baseMapper.selectList(null);
-
         //先查出所有一级分类
         List<CategoryEntity> level1Categorys = getCategorys(selectList, 0L);
 
@@ -191,9 +255,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
 
         return map;
-
     }
-
 
     //225,25,2
     private List<Long> findParentPath(Long catelogId, List<Long> paths) {
