@@ -18,7 +18,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
 import redis.clients.jedis.Jedis;
 
 import java.util.*;
@@ -164,53 +163,70 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
     @Override
     public Map<String, List<Catalog2Vo>> getCatalogJson() {
         //加入缓存逻辑
-        Jedis jedis = redisUtil.getJedis();
-        String catalogJson = jedis.get("catalogJson");
-
         Map<String, List<Catalog2Vo>> json = null;
+        Jedis jedis = null;
+        try {
+            jedis = redisUtil.getJedis();
+            String catalogJson = jedis.get("catalogJson");
 
+            json = null;
 
-        //缓存存在 转换返回
-        if (!StringUtils.isEmpty(catalogJson)) {
-            json = JSONObject.parseObject(catalogJson, new TypeReference<Map<String, List<Catalog2Vo>>>() {
-            });
-            return json;
+            //缓存存在 转换返回
+            if (!catalogJson.equals("null")) {
+                json = JSONObject.parseObject(catalogJson, new TypeReference<Map<String, List<Catalog2Vo>>>() {
+                });
+                return json;
+            }
+
+            //缓存没有从数据查询
+            json = getCatalogJsonFromDBWithRedisLock();
+            //转成str 加入缓存
+            String jsonString = JSON.toJSONString(json);
+            jedis.set("catalogJson", jsonString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            redisUtil.closeJedis(jedis);
         }
-
-        //缓存没有从数据查询
-        json = getCatalogJsonFromDBWithRedisLock();
-        //转成str 加入缓存
-        String jsonString = JSON.toJSONString(json);
-        jedis.set("catalogJson", jsonString);
 
         return json;
     }
 
     public Map<String, List<Catalog2Vo>> getCatalogJsonFromDBWithRedisLock() {
-        Jedis jedis = redisUtil.getJedis();
-        //加锁
-        String token = UUID.randomUUID().toString();
-        String lock = jedis.set("lock", token, "NX", "EX", 20);
-        System.out.println(lock);
 
         Map<String, List<Catalog2Vo>> map = null;
-        //加锁成功
-        if ("ok".equals(lock)) {
-            map = getCatalogJsonFromDB();
-            //删除锁 lua脚本
-            String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
-            jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList(token));
-            return map;
-        } else {
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            //自旋
-            return getCatalogJsonFromDBWithRedisLock();
-        }
+        Jedis jedis = null;
+        try {
+            jedis = redisUtil.getJedis();
+            //加锁
+            String token = UUID.randomUUID().toString();
+            String lock = jedis.set("lock", token, "NX", "EX", 20);
+            System.out.println(lock);
 
+            //加锁成功
+            if ("OK".equals(lock)) {
+                map = getCatalogJsonFromDB();
+                //删除锁 lua脚本
+                String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+                jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList(token));
+
+            } else {
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    jedis.close();
+                }
+                //自旋
+                return getCatalogJsonFromDBWithRedisLock();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            jedis.close();
+        }
+        return map;
     }
 
 
