@@ -23,17 +23,14 @@ import redis.clients.jedis.Jedis;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 @Service("categoryService")
 public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity> implements CategoryService {
-
 
     @Autowired
     CategoryBrandRelationService categoryBrandRelationService;
 
     @Autowired
     RedisUtil redisUtil;
-
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -114,7 +111,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         categoryBrandRelationService.updateCategory(category.getCatId(), category.getName());
     }
 
-
     //[2,25,225]
     @Override
     public Long[] findCatelogPath(Long catelogId) {
@@ -122,7 +118,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         List<Long> parentPath = findParentPath(catelogId, paths);
 
         Collections.reverse(parentPath);
-
 
         return parentPath.toArray(new Long[parentPath.size()]);
     }
@@ -169,10 +164,8 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
             jedis = redisUtil.getJedis();
             String catalogJson = jedis.get("catalogJson");
 
-            json = null;
-
             //缓存存在 转换返回
-            if (!catalogJson.equals("null")) {
+            if (null != catalogJson) {
                 json = JSONObject.parseObject(catalogJson, new TypeReference<Map<String, List<Catalog2Vo>>>() {
                 });
                 return json;
@@ -229,7 +222,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return map;
     }
 
-
     /**
      * 从数据库获取数据并封装返回
      *
@@ -269,7 +261,6 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
             return catelog2Vos;
         }));
 
-
         return map;
     }
 
@@ -284,6 +275,5 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return paths;
 
     }
-
 
 }

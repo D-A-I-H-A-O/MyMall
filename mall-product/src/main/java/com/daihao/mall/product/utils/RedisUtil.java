@@ -20,7 +20,7 @@ public class RedisUtil {
     }
 
     public synchronized Jedis getJedis() {
-        if (jedisPool == null) {
+        if (jedisPool != null) {
             Jedis jedis = jedisPool.getResource();
             return jedis;
         }

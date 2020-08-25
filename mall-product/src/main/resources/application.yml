@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: test
   datasource:
     username: root
     password: root
@@ -32,3 +34,4 @@ logging:
 
   thymeleaf:
     cache: false
+
