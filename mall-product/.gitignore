@@ -18,6 +18,8 @@ target/
 *.iws
 *.iml
 *.ipr
+workspace
+target
 
 ### NetBeans ###
 /nbproject/private/
@@ -30,7 +32,3 @@ build/
 ### VS Code ###
 .vscode/
 
-.classpath
-.project
-target
-.settings
