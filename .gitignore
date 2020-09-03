@@ -34,7 +34,5 @@ hs_err_pid*
 .project
 .classpath
 workspace
-.classpath
-.project
 target
 .settings
