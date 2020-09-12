@@ -44,6 +44,7 @@ public class OssController {
         //callbackUrl为 上传回调服务器的URL，请将下面的IP和Port配置为您自己的真实信息。
         //String callbackUrl = "http://88.88.88.88:8888";
         String format = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+
         // 用户上传文件时指定的前缀
         String dir = format + "/";
 
@@ -66,7 +67,7 @@ public class OssController {
             respMap.put("policy", encodedPolicy);
             respMap.put("signature", postSignature);
             respMap.put("dir", dir);
-            respMap.put("host", host);
+            respMap.put("host", "https://" + bucket);
             respMap.put("expire", String.valueOf(expireEndTime / 1000));
             // respMap.put("expire", formatISO8601Date(expiration));
 
