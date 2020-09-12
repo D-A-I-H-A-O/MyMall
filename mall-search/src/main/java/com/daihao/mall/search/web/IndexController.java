@@ -21,7 +21,7 @@ public class IndexController {
     @GetMapping("/")
     public String hello() {
 
-        return "index.html";
+        return "list.html";
     }
 
 

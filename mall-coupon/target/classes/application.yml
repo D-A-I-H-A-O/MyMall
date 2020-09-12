@@ -2,7 +2,8 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://192.168.175.130:3306/mall_sms?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+   #url: jdbc:mysql://192.168.175.130:3306/mall_sms?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://192.168.138.131:3306/mall_sms?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.jdbc.Driver
   cloud:
     nacos:
