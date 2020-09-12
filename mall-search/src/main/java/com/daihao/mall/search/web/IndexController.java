@@ -18,7 +18,7 @@ public class IndexController {
      * 简单请求
      * @return
      */
-    @GetMapping("/")
+    @GetMapping("/list.html")
     public String hello() {
 
         return "list.html";
