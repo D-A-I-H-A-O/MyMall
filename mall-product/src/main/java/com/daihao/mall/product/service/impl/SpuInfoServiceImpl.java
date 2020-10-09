@@ -140,9 +140,9 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
             skus.forEach(item -> {
                 String defaultImg = "";
                 for (Images image : item.getImages()) {
-                    if (image.getDefaultImg() == 1) {
+                    //if (image.getDefaultImg() == 1) {
                         defaultImg = image.getImgUrl();
-                    }
+                    //}
                 }
                 //    private String skuName;
                 //    private BigDecimal price;

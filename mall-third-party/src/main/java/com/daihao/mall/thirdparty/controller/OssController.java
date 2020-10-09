@@ -68,6 +68,7 @@ public class OssController {
             respMap.put("signature", postSignature);
             respMap.put("dir", dir);
             respMap.put("host", "https://" + bucket);
+           // respMap.put("host", host);
             respMap.put("expire", String.valueOf(expireEndTime / 1000));
             // respMap.put("expire", formatISO8601Date(expiration));
 

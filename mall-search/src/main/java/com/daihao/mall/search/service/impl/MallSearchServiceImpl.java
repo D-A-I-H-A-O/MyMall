@@ -79,9 +79,9 @@ public class MallSearchServiceImpl implements MallSearchService {
      */
     private SearchResult buildSearchResult(SearchResponse searchResponse, SearchParam param) {
         SearchResult result = new SearchResult();
-        SearchHits hits = searchResponse.getHits();
 
-        //返回的所有查询到的项目
+        //返回的所有查询到的商品
+        SearchHits hits = searchResponse.getHits();
         List<SkuEsModel> essModels = new ArrayList<>();
         if (hits.getHits() != null && hits.getHits().length > 0) {
             for (SearchHit hit : hits.getHits()) {
@@ -101,14 +101,16 @@ public class MallSearchServiceImpl implements MallSearchService {
         ParsedLongTerms attr_id_agg = attr_agg.getAggregations().get("attr_id_agg");
         for (Terms.Bucket bucket : attr_id_agg.getBuckets()) {
             SearchResult.AttrVo attrVo = new SearchResult.AttrVo();
-            String attrName = ((ParsedStringTerms) bucket.getAggregations().get("attr_name_agg")).getBuckets().get(0).getKeyAsString();
-            List<String> attrValues = ((ParsedStringTerms) bucket.getAggregations().get("attr_value_agg")).getBuckets().stream().map(doc -> {
-                String keyAsString = ((Terms.Bucket) doc).getKeyAsString();
-                return keyAsString;
-            }).collect(Collectors.toList());
-            attrVo.setAttrId(bucket.getKeyAsNumber().longValue());
-            attrVo.setAttrName(attrName);
-            attrVo.setAttrValue(attrValues);
+            if (((ParsedStringTerms) bucket.getAggregations().get("attr_name_agg")).getBuckets().size() > 0) {
+                String attrName = ((ParsedStringTerms) bucket.getAggregations().get("attr_name_agg")).getBuckets().get(0).getKeyAsString();
+                List<String> attrValues = ((ParsedStringTerms) bucket.getAggregations().get("attr_value_agg")).getBuckets().stream().map(doc -> {
+                    String keyAsString = ((Terms.Bucket) doc).getKeyAsString();
+                    return keyAsString;
+                }).collect(Collectors.toList());
+                attrVo.setAttrId(bucket.getKeyAsNumber().longValue());
+                attrVo.setAttrName(attrName);
+                attrVo.setAttrValue(attrValues);
+            }
             attrVos.add(attrVo);
         }
         result.setAttrs(attrVos);
@@ -118,10 +120,16 @@ public class MallSearchServiceImpl implements MallSearchService {
         for (Terms.Bucket bucket : brand_agg.getBuckets()) {
             SearchResult.BrandVo brandVo = new SearchResult.BrandVo();
             brandVo.setBrandId(bucket.getKeyAsNumber().longValue());
-            String brandImg = ((ParsedStringTerms) bucket.getAggregations().get("brand_img_agg")).getBuckets().get(0).getKeyAsString();
-            brandVo.setBrandName(brandImg);
-            String brandName = ((ParsedStringTerms) bucket.getAggregations().get("brand_name_agg")).getBuckets().get(0).getKeyAsString();
-            brandVo.setBrandName(brandName);
+            if (((ParsedStringTerms) bucket.getAggregations().get("brand_img_agg")).getBuckets().size() > 0) {
+                String brandImg = ((ParsedStringTerms) bucket.getAggregations().get("brand_img_agg")).getBuckets().get(0).getKeyAsString();
+                brandVo.setBrandName(brandImg);
+            }
+
+            if (((ParsedStringTerms) bucket.getAggregations().get("brand_name_agg")).getBuckets().size() > 0) {
+                String brandName = ((ParsedStringTerms) bucket.getAggregations().get("brand_name_agg")).getBuckets().get(0).getKeyAsString();
+                brandVo.setBrandName(brandName);
+            }
+
             brandVos.add(brandVo);
         }
         result.setBrands(brandVos);
@@ -132,8 +140,11 @@ public class MallSearchServiceImpl implements MallSearchService {
             SearchResult.CatalogVo catalogVo = new SearchResult.CatalogVo();
             catalogVo.setCatalogId(Long.parseLong(bucket.getKeyAsString()));
             ParsedStringTerms catalog_name_agg = bucket.getAggregations().get("catalog_name_agg");
-            String catalog_name = catalog_name_agg.getBuckets().get(0).getKeyAsString();
-            catalogVo.setCatalogName(catalog_name);
+            if (catalog_name_agg.getBuckets().size() > 0) {
+                String catalog_name = catalog_name_agg.getBuckets().get(0).getKeyAsString();
+                catalogVo.setCatalogName(catalog_name);
+            }
+
             catalogVos.add(catalogVo);
         }
         //分页信息-页码
@@ -160,15 +171,14 @@ public class MallSearchServiceImpl implements MallSearchService {
          * 模糊匹配 、过滤、（按照属性、分类、品牌、价格区间、库存）
          */
         BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
-        if (StringUtils.isNotBlank(param.getKeyword())) {
+        if (StringUtils.isNotBlank(param.getKeyword()))
             boolQuery.must(QueryBuilders.matchQuery("skuTitle", param.getKeyword()));
-        }
-        if (param.getCatalog3Id() != null) {
+        if (param.getCatalog3Id() != null)
             boolQuery.filter(QueryBuilders.termQuery("catalogId", param.getCatalog3Id()));
-        }
-        if (param.getBrandId() != null && param.getBrandId().size() > 0) {
+        if (param.getBrandId() != null && param.getBrandId().size() > 0)
             boolQuery.filter(QueryBuilders.termsQuery("brandId", param.getBrandId()));
-        }
+        if (param.getHasStock() != null)
+            boolQuery.filter(QueryBuilders.termQuery("hasStock", param.getHasStock() == 1));
         if (StringUtils.isNotBlank(param.getSkuPrice())) {
             RangeQueryBuilder rangeQuery = QueryBuilders.rangeQuery("skuPrice");
             String[] s = param.getSkuPrice().split("_");
@@ -196,9 +206,7 @@ public class MallSearchServiceImpl implements MallSearchService {
                 boolQuery.filter(nestedQuery);
             }
         }
-        if (param.getHasStock() != null) {
-            boolQuery.filter(QueryBuilders.termQuery("hasStock", param.getHasStock() == 1));
-        }
+
         //所有条件进行封装
         sourceBuilder.query(boolQuery);
         /**
@@ -210,7 +218,14 @@ public class MallSearchServiceImpl implements MallSearchService {
             SortOrder sortOrder = s[1].equalsIgnoreCase("asc") ? SortOrder.ASC : SortOrder.DESC;
             sourceBuilder.sort(s[0], sortOrder);
         }
-        sourceBuilder.from((param.getPageNum() - 1) * EsConstant.PRODUCT_PAGESIZE);
+
+        System.out.println("PageNum" + param.getPageNum());
+
+        if (param.getPageNum() == null) {
+            //sourceBuilder.from((50 - 1) * EsConstant.PRODUCT_PAGESIZE);
+        } else {
+            sourceBuilder.from((param.getPageNum() - 1) * EsConstant.PRODUCT_PAGESIZE);
+        }
         sourceBuilder.size(EsConstant.PRODUCT_PAGESIZE);
 
         if (StringUtils.isNotBlank(param.getKeyword())) {
@@ -226,27 +241,27 @@ public class MallSearchServiceImpl implements MallSearchService {
         //品牌聚合
         TermsAggregationBuilder brand_agg = AggregationBuilders.terms("brand_agg").field("brandId").size(50);
         //品牌聚合的子聚合
-        brand_agg.subAggregation(AggregationBuilders.terms("brand_name_agg").field("brandName").size(1));
-        brand_agg.subAggregation(AggregationBuilders.terms("brand_img_agg").field("brandImg").size(1));
+        brand_agg.subAggregation(AggregationBuilders.terms("brand_name_agg").field("brandName.keyword").size(1));
+        brand_agg.subAggregation(AggregationBuilders.terms("brand_img_agg").field("brandImg.keyword").size(1));
         sourceBuilder.aggregation(brand_agg);
 
         //分类聚合
         TermsAggregationBuilder catalog_agg = AggregationBuilders.terms("catalog_agg").field("catalogId").size(50);
         sourceBuilder.aggregation(catalog_agg);
         //分类子聚合
-        catalog_agg.subAggregation(AggregationBuilders.terms("catalog_name_agg").field("catalogName").size(1));
+        catalog_agg.subAggregation(AggregationBuilders.terms("catalog_name_agg").field("catalogName.keyword").size(1));
 
         //属性聚合
         NestedAggregationBuilder attr_agg = AggregationBuilders.nested("attr_agg", "attrs");
         TermsAggregationBuilder attr_id_agg = AggregationBuilders.terms("attr_id_agg").field("attrs.attrId");
-        attr_id_agg.subAggregation(AggregationBuilders.terms("attr_name_agg").field("attrs.attrName").size(1));
+        attr_id_agg.subAggregation(AggregationBuilders.terms("attr_name_agg").field("attrs.attrName.keyword").size(1));
         attr_id_agg.subAggregation(AggregationBuilders.terms("attr_value_agg").field("attrs.attrValue").size(1));
         attr_agg.subAggregation(attr_id_agg);
 
         //聚合attr
         sourceBuilder.aggregation(attr_agg);
 
-        System.out.println(sourceBuilder.toString());
+        System.out.println("检索请求" + sourceBuilder.toString());
 
         SearchRequest searchRequest = new SearchRequest(new String[]{EsConstant.PRODUCT_INDEX}, sourceBuilder);
         return searchRequest;

@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
 
-    /**
-     * 简单请求
-     * @return
-     */
-    @GetMapping("/")
-    public String hello() {
-
-        return "list.html";
-    }
+//    /**
+//     * 简单请求
+//     * @return
+//     */
+//    @GetMapping("/")
+//    public String hello() {
+//
+//        return "list.html";
+//    }
 
 
 }
