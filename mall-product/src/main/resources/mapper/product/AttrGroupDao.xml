@@ -3,7 +3,7 @@
 
 <mapper namespace="com.daihao.mall.product.dao.AttrGroupDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
+    <!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.daihao.mall.product.entity.AttrGroupEntity" id="attrGroupMap">
         <result property="attrGroupId" column="attr_group_id"/>
         <result property="attrGroupName" column="attr_group_name"/>
@@ -12,6 +12,29 @@
         <result property="icon" column="icon"/>
         <result property="catelogId" column="catelog_id"/>
     </resultMap>
+
+
+    <resultMap type="com.daihao.mall.product.vo.SpuItemAttrGroupVo" id="spuItemAttrGroupVo">
+        <result property="groupName" column="attr_group_name"></result>
+        <collection property="attrs" ofType="com.daihao.mall.product.vo.Attr">
+            <result property="attrName" column="attr_name"></result>
+            <result property="attrValue" column="attr_value"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getAttrGroupWithAttrsBySpuId" resultMap="spuItemAttrGroupVo">
+        select d.spu_id,
+           a.attr_group_id,
+           a.attr_group_name,
+           b.attr_id,
+           c.attr_name,
+           d.attr_value
+        from pms_attr_group a
+             left join pms_attr_attrgroup_relation b on a.attr_group_id = b.attr_group_id
+             left join pms_attr c on c.attr_id = b.attr_id
+             left join pms_product_attr_value d on d.attr_id = b.attr_id
+        where a.catelog_id = #{catalogId} and d.spu_id = #{spuId}
+    </select>
 
 
 </mapper>
