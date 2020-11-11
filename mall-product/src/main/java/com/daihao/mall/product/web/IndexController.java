@@ -41,14 +41,14 @@ public class IndexController {
 
     /**
      * 简单请求
+     *
      * @return
      */
     @ResponseBody
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/hello/{name}")
+    public String hello(String name) {
 
-        return "hello";
+        return "获取到的name是：" + name;
     }
-
 
 }

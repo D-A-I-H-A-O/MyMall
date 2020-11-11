@@ -6,18 +6,36 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.daihao.mall.common.utils.PageUtils;
 import com.daihao.mall.common.utils.Query;
 import com.daihao.mall.product.dao.SkuInfoDao;
+import com.daihao.mall.product.entity.SkuImagesEntity;
 import com.daihao.mall.product.entity.SkuInfoEntity;
+import com.daihao.mall.product.entity.SpuInfoDescEntity;
+import com.daihao.mall.product.service.AttrGroupService;
+import com.daihao.mall.product.service.SkuImagesService;
 import com.daihao.mall.product.service.SkuInfoService;
+import com.daihao.mall.product.service.SkuSaleAttrValueService;
+import com.daihao.mall.product.service.SpuInfoDescService;
+import com.daihao.mall.product.vo.SkuItemSaleAttrVo;
+import com.daihao.mall.product.vo.SkuItemVo;
+import com.daihao.mall.product.vo.SpuItemAttrGroupVo;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
-
 @Service("skuInfoService")
 public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoDao, SkuInfoEntity> implements SkuInfoService {
+
+    @Autowired
+    SkuImagesService skuImagesService;
+    @Autowired
+    SpuInfoDescService spuInfoDescService;
+    @Autowired
+    AttrGroupService attrGroupService;
+    @Autowired
+    SkuSaleAttrValueService skuSaleAttrValueService;
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -82,7 +100,6 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoDao, SkuInfoEntity> i
 
         }
 
-
         IPage<SkuInfoEntity> page = this.page(
                 new Query<SkuInfoEntity>().getPage(params),
                 queryWrapper
@@ -91,7 +108,9 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoDao, SkuInfoEntity> i
         return new PageUtils(page);
     }
 
-    /** 根据spuId查询所有对应spuId的sku信息
+    /**
+     * 根据spuId查询所有对应spuId的sku信息
+     *
      * @param spuId
      * @return
      */
@@ -99,6 +118,35 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoDao, SkuInfoEntity> i
     public List<SkuInfoEntity> getSkuBySpuId(Long spuId) {
         List<SkuInfoEntity> skuList = this.list(new QueryWrapper<SkuInfoEntity>().eq("spu_id", spuId));
         return skuList;
+    }
+
+    @Override
+    public SkuItemVo getSkuInfoBySkuId(Long skuId) {
+        SkuItemVo skuItemVo = new SkuItemVo();
+
+        //sku基本信息
+        SkuInfoEntity info = getById(skuId);
+        skuItemVo.setInfo(info);
+
+        //sku图片信息
+        List<SkuImagesEntity> skuImages = skuImagesService.getImagesBySkuId(skuId);
+        skuItemVo.setImages(skuImages);
+        Long spuId = info.getSpuId();
+
+        //获取spu的所有销售属性
+        List<SkuItemSaleAttrVo> saleAttrVos = skuSaleAttrValueService.getSaleAttrsBySpuId(spuId);
+        skuItemVo.setSaleAttr(saleAttrVos);
+
+        //spu的介绍
+        SpuInfoDescEntity spuInfoDescEntity = spuInfoDescService.getById(spuId);
+        skuItemVo.setDesc(spuInfoDescEntity);
+
+        //获取规格参数组及组下的规格参数
+        Long catalogId = info.getCatalogId();
+        List<SpuItemAttrGroupVo> attrGroup = attrGroupService.getAttrGroupWithAttrsBySpuId(spuId, catalogId);
+        skuItemVo.setAttrGroups(attrGroup);
+
+        return skuItemVo;
     }
 
 }

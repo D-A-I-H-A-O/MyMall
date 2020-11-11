@@ -3,6 +3,7 @@ package com.daihao.mall.product.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.daihao.mall.common.utils.PageUtils;
 import com.daihao.mall.product.entity.SkuInfoEntity;
+import com.daihao.mall.product.vo.SkuItemVo;
 
 import java.util.List;
 import java.util.Map;
@@ -24,5 +25,6 @@ public interface SkuInfoService extends IService<SkuInfoEntity> {
 
     List<SkuInfoEntity> getSkuBySpuId(Long spuId);
 
+    SkuItemVo getSkuInfoBySkuId(Long skuId);
 }
 

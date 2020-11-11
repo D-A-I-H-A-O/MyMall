@@ -49,7 +49,7 @@ spring:
         - id: mall_host_route
           uri: lb://mall-product
           predicates:
-            - Host=mymall.com
+            - Host=mymall.com,item.mymall.com
 
         - id: mall_search_route
           uri: lb://mall-search
